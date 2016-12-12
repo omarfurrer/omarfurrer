@@ -1,0 +1,194 @@
+{% extends 'grid-gallery.twig' %}
+
+{% block header %}
+
+    <nav id="supsystic-breadcrumbs" class="supsystic-breadcrumbs">
+        <a href="{{ environment.generateUrl('galleries') }}">{{ translate('Gallery by Supsystic') }}</a>
+        <i class="fa fa-angle-right"></i>
+        <a href="{{ environment.generateUrl('galleries') }}">{{ translate('Galleries') }}</a>
+    </nav>
+
+{% endblock %}
+
+{% block content %}
+
+    <section id="gg-galleries">
+
+        {% if galleries is not defined %}
+            {# Show error here #}
+        {% else %}
+
+            <div class="gg-galleries-grid">
+                {#<h2 style="margin-left: 10px;padding-bottom: 10px !important;border-bottom: 1px solid;">Gallery list</h2>#}
+                {% for gallery in galleries %}
+                    <div id="{{ gallery.id }}" class="gg-item gg-gallery" style="height: auto;">
+                        <h3 class="gallery-title">{{ gallery.title|title|raw }}</h3>
+                        <div class="image">
+                            {#<a href="{{ environment.generateUrl('galleries', 'view', { 'gallery_id': gallery.id }) }}">#}
+                            {% set cover = get_attachment(gallery.attachment_id, '350', '225', 'true') %}
+
+                            {% if cover|length < 1 %}
+                                {% if gallery.settings.posts.postCover|length > 1 %}
+                                    {% set cover = gallery.settings.posts.postCover %}
+                                {% endif %}
+                            {% endif %}
+                            <img src="{{ cover|default('holder.js/350x220?theme=gray&text=' ~ gallery.title|raw) }}" alt="{{ gallery.title|raw }}" width="350px" height="220px"/>
+                            {#</a>#}
+                            {#<a class="delete-gallery" title="Delete this gallery"
+                               href="{{ environment.generateUrl('galleries', 'delete', { 'gallery_id': gallery.id }) }}">
+                                <i class="fa fa-trash-o fa-5x"></i>
+                            </a>#}
+                    </div>
+                        <div class="controls-wrap" style="display: inline-block">
+                            <!-- Control buttons -->
+                            <ul class="gg-control-btn">
+                                <li>
+                                    <a href="{{ environment.generateUrl('galleries', 'settings', { 'gallery_id': gallery.id }) }}"
+                                       class="button background">
+                                        <i class="fa fa-gear"></i>
+                                        {{ translate('Settings') }}
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ environment.generateUrl('galleries', 'view', { 'gallery_id': gallery.id }) }}"
+                                       class="button background">
+                                        <i class="fa fa-bars"></i>
+                                        {{ translate('Images list') }}
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ environment.generateUrl('galleries', 'preview', { 'gallery_id': gallery.id }) }}"
+                                       class="button background">
+                                        <i class="fa fa-eye"></i>
+                                        {{ translate('Preview') }}
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="gg-control-btn">
+                                <li>
+                                    <h4>
+                                        <i class="fa fa-picture-o"></i>
+                                        {{ translate('Total Images: ') }}
+                                        <div class="gg-counter"
+                                             style="display: inline-block; font-weight: 200;"
+                                             title="{{ translate('There are %s photos in the gallery %s')|format(gallery.photos|length, gallery.title|raw) }}">
+                                            {{ gallery.total + gallery.settings.posts.length|default(0) }}
+                                        </div>
+                                    </h4>
+                                </li>
+                                <li title="{{ translate('Upload new images') }}">
+                                    <button class="button button-primary gallery import-to-gallery" id="!sgg-btn-upload" data-folder-id="0"
+                                            data-gallery-id="{{ gallery.id }}" {# data-upload #}>
+                                        <i class="fa fa-fw fa-camera"></i>
+                                        {{ translate('Add Images') }}
+                                    </button>
+                                </li>
+                                <li>
+                                    <a id="delete-gallery" data-confirm="{{ translate('Are you sure you want to delete this gallery?') }}" class="button button-primary" title="Delete this gallery"
+                                       href="{{ environment.generateUrl('galleries', 'delete', { 'gallery_id': gallery.id, '_wpnonce': _wpnonce }) }}">
+                                        <i class="fa fa-trash-o"></i>
+                                        {{ translate('Delete gallery') }}
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="shortcode-wrap">
+                            <div class="gg-shortcode">
+                                {{ translate('Shortcode:') }}<br /><br /> <input type="text" id="shortcode-{{ gallery.id }}" class="ggCopyTextCode shortcode" value="[supsystic-gallery id='{{ gallery.id }}']"><br /><br />
+                                {{ translate('PHPCode:') }}<br /><br /> 
+                                <input type="text" id="phpcode-{{ gallery.id }}" class="ggCopyTextCode phpcode" value='{{ '<?php echo do_shortcode(\'[supsystic-gallery id=' ~ gallery.id ~ ']\') ?>' }}'>
+                            </div>
+                        </div>
+                    </div>
+                {% else %}
+                    <h3>{{ translate('You have no galleries') }}</h3>
+                    <p>
+                        {{ translate('You don\'t have any galleries yet.') }}
+                        <a href="{{ environment.generateUrl('galleries', 'showPresets') }}"
+                           id="gg-create-gallery-link"
+                           style = "color: #4ae8ea;">{{ translate('Want to create one right now?') }}</a>
+                    </p>
+
+                    <h3>{{ translate('What is a gallery') }}</h3>
+                    <p>
+                        {{ translate('<strong>Gallery</strong> &mdash; the highest type of entity in the Gallery by Supsystic.')|raw }}
+                        <br/>
+                        {{ translate('You can have an unlimited number of galleries, to which you can attach the preloaded pictures.') }}
+                        {{ translate('Each gallery has a number of display settings and behaviors that you can save to presets and apply to other galleries.') }}
+                    </p>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </section>
+
+    {% macro putPreset(data) %}
+        <div class="preset {% if environment.isPro() == false and data.pro %}disabled{% endif %}"
+             data-preset="{{ data.value }}">
+            <p>{{ data.title|title }}</p>
+            <img src="{{ environment.getModule('galleries').getLocationUrl() }}/assets/img/{{ data.image }}" alt=""/>
+            {% if data.pro and environment.isPro() == false %}
+                <a class="button button-primary inPro"
+                    {% if data.title == 'Categories' %}
+                        href="http://supsystic.com/plugins/photo-gallery/" target="_blank">
+                    {% endif %}
+                    {% if data.title == 'Icons' %}
+                        href="http://supsystic.com/plugins/photo-gallery/" target="_blank">
+                    {% endif %}
+                    {% if data.title == 'Pagination' %}
+                        href="http://supsystic.com/plugins/photo-gallery/" target="_blank">
+                    {% endif %}
+                    Available in PRO
+                </a>
+            {% endif %}
+        </div>
+    {% endmacro %}
+
+    <!-- Create dialog -->
+    {#<div id="gg-create-gallery-dialog" title="{{ environment.translate('Create new gallery') }}">
+        <div id="newGalleryAlert" style="color:red;display:none">
+            {{ environment.translate('Gallery title can\'t be empty!') }}
+        </div>
+        <div id="gg-create-gallery-text">
+            <label style="float: left; margin: 4px 5px 0 0;">{{ environment.translate('Gallery title:') }}</label>
+            <input name="title" type="text" style="float: left; width: 60%;"/>
+            <button id="gallery-create" class="button button-primary" type="button">
+                {{ environment.translate('Save') }}
+            </button>
+            <button id="gallery-cancel" class="button button-primary" type="button">
+                {{ environment.translate('Cancel') }}
+            </button>
+
+            <div class="clear"></div>
+            <input id="presetValue" name="preset" type="hidden" value="1"/>
+
+            <div class="presetSelect">
+                {% import _self as preset %}
+
+                {% set presets = [
+                {'title':'Default', 'image':'1-photo-gallery-default-settings.jpg', 'pro': false, 'value': 1},
+                {'title':'Fluid, Border, Caption', 'image':'2-photo-gallery-borders.jpg', 'pro': false, 'value': 2},
+                {'title':'Fluid, Shadow, Rounded', 'image':'3-round-cornerns.jpg', 'pro': false, 'value': 3},
+                {'title':'Categories', 'image':'4-categories.jpg', 'pro': true, 'value': 4},
+                {'title':'Icons', 'image':'5-icons.jpg', 'pro': true, 'value': 5},
+                {'title':'Pagination', 'image':'6-pagination_circle-gallery.jpg', 'pro': true, 'value': 6}
+                ] %}
+
+                {% for data in presets %}
+                    {{ preset.putPreset(data) }}
+                {% endfor %}
+            </div>
+        </div>
+        <div id="gg-create-gallery-loader" style="display: none;">
+            <p class="gg-centered">
+
+            <div class="gg-inline-loader gg-centered"></div>
+            </p>
+        </div>
+    </div>#}
+
+    {% import '@galleries/shortcode/import.twig' as importTypes %}
+    <div id="importDialog" title="{{ translate('Select source to import from') }}" style="display: none;">
+        {{ importTypes.show(400) }}
+    </div>
+
+{% endblock %}

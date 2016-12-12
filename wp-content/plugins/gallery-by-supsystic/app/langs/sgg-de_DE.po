@@ -1,0 +1,1155 @@
+msgid "An error has occurred"
+msgstr "Ein Fehler ist aufgetreten"
+
+msgid "Overview"
+msgstr "Übersicht"
+
+msgid "New Gallery"
+msgstr "Neue Galerie"
+
+msgid "Galleries"
+msgstr "Galerien"
+
+msgid "Settings"
+msgstr "Einstellungen"
+
+msgid "License"
+msgstr "Lizenz"
+
+msgid "Images"
+msgstr "Bilder"
+
+msgid "Instagram"
+msgstr "Instagram"
+
+msgid "Flickr"
+msgstr "Flickr"
+
+msgid "Tumblr"
+msgstr "Tumblr"
+
+msgid "Facebook"
+msgid "Facebook"
+
+msgid "Get PRO"
+msgstr "ProVersion bekommen"
+
+msgid "Loading"
+msgstr "Laden"
+
+msgid "Authorization code is not specified."
+msgstr "Autorisierungscode ist nicht angegeben"
+
+msgid "Gallery by Supsystic"
+msgstr "Gallery by Supsystic"
+
+msgid "Import images"
+msgstr "Bildimport"
+
+msgid "Facebook authorization"
+msgstr "Facebook autorisierung"
+
+msgid "Upload your images from the Facebook Media Library"
+msgstr "Lade Deine Bilder aus Deiner Facebook Galerie"
+
+msgid "Login with Facebook"
+msgstr "Mit Facebook einloggen"
+
+msgid "Return to the gallery"
+msgstr "Zurück zur Galerie"
+
+msgid "Upload new images"
+msgstr "Neue Bilder hochladen"
+
+msgid "Logout"
+msgstr "Logout"
+
+msgid "Select/unselect all photos"
+msgstr "Alle/Keine Fotos auswählen"
+
+msgid "Save"
+msgstr "Speichern"
+
+msgid "Empty user data."
+msgstr "Leere Anwenderdaten"
+
+msgid "Flickr authorization"
+msgstr "Flickr autorisierung"
+
+msgid "Upload your images from the Flickr Media Library"
+msgstr "Lade Deine Bilder aus Deiner Flickrsammlung"
+
+msgid "Upload from Flickr"
+msgstr "Hochladen von Flickr"
+
+msgid "Images not in albums"
+msgstr "Bilder ohne Alben"
+
+msgid "Albums"
+msgstr "Alben"
+
+msgid "Fullscreen"
+msgstr "Fullscreen"
+
+msgid "Load More Button"
+msgstr "Mehr laden Schalter"
+
+msgid "Enable"
+msgstr "Einschalten"
+
+msgid "Disable"
+msgstr "Abschalten"
+
+msgid "Load with scroll"
+msgstr "Mit scrollen laden"
+
+msgid "No"
+msgstr "Nein"
+
+msgid "Yes"
+msgstr "Ja"
+
+msgid "Load more button text"
+msgstr "Lade mehr Button Text"
+
+msgid "Images amount"
+msgstr "Anzahl Bilder"
+
+msgid "Custom Buttons"
+msgstr "eigene Buttons"
+
+msgid "Gallery Loader"
+msgstr "Galerie Lader"
+
+msgid "Background color"
+msgstr "Hintergrundfarbe"
+
+msgid "Choose Icon"
+msgstr "Wähle Icon"
+
+msgid "Disable right click"
+msgstr "Schalte Rechtsklick ab"
+
+msgid "Video size"
+msgstr "Videogröße"
+
+msgid "Autoplay video"
+msgstr "Autoplay Video"
+
+msgid "When video ends"
+msgstr "wenn das Video zu Ende ist"
+
+msgid "Do nothing"
+msgstr "Tur nichts"
+
+msgid "Open next slide"
+msgstr "Öffne nächsten Slide"
+
+msgid "Close popup"
+msgstr "Schließe Popup"
+
+msgid "Posts layout"
+msgstr "Layout der Postings"
+
+msgid "Posts layout style"
+msgstr "Beiträge Layout Aussehen"
+
+msgid "Posts"
+msgstr "Beiträge"
+
+msgid "Pages"
+msgstr "Seiten"
+
+msgid "Show author"
+msgstr "Zeige Autor"
+
+msgid "Show date"
+msgstr "Zeige Datum"
+
+msgid "Show contents"
+msgstr "Zeige Inhalt"
+
+msgid "Show categories"
+msgstr "Zeige Kategorien"
+
+msgid "Hide \"All\" category"
+msgstr "Verstecke "ALLE" Kategorien"
+
+msgid "Animation duration"
+msgstr "Animation Dauer"
+
+msgid "Position"
+msgstr "Position"
+
+msgid "Over the gallery"
+msgstr "Über der Galerie"
+
+msgid "Under the gallery"
+msgstr "Unter der Galerie"
+
+msgid "Align"
+msgstr "Ausrichtung"
+
+msgid "Left"
+msgstr "Links"
+
+msgid "Center"
+msgstr "Zentriert"
+
+msgid "Right"
+msgstr "Rechts"
+
+msgid "Presets"
+msgstr "Voreinstellungen"
+
+msgid "Choose preset"
+msgstr "Wähle Voreinstellungen"
+
+msgid "Preset Editor"
+msgstr "Voreinstellungseditor"
+
+msgid "Categories order"
+msgstr "Kategorierenanordnung"
+
+msgid "All"
+msgstr "Alle"
+
+msgid "Enable pagination"
+msgstr "Nummerierung einschalten"
+
+msgid "Pagination"
+msgstr "Nummerierung"
+
+msgid "Images per page"
+msgstr "Bilder pro Seite"
+
+msgid "Buttons position"
+msgstr "Button Position"
+
+msgid "Top"
+msgstr "Oben"
+
+msgid "Bottom"
+msgstr "Unten"
+
+msgid "Container background"
+msgstr "Container Hintergrund"
+
+msgid "Hide container background."
+msgstr "Verstecke Container Hintergrund"
+
+msgid "Text background"
+msgstr "Texthintergrund"
+
+msgid "Hide text background."
+msgstr "verstecke Texthintergrund"
+
+msgid "Text color"
+msgstr "Textfarbe"
+
+msgid "Use color, based on my theme."
+msgstr "Benutze Farbe aus meinem Theme"
+
+msgid "Font weight"
+msgstr "Text fett"
+
+msgid "Font size"
+msgstr "Textgrösse"
+
+msgid "Border width"
+msgstr "Rahmendicke"
+
+msgid "Border type"
+msgstr "Rahmentyp"
+
+msgid "Border color"
+msgstr "Rahmenfarbe"
+
+msgid "Border radius"
+msgstr "Rahmenradius"
+
+msgid "Custom class"
+msgstr "eigene Klassen"
+
+msgid "Font family"
+msgstr "Textart"
+
+msgid "Border style"
+msgstr "Rahmenstyle"
+
+msgid "Choose icon"
+msgstr "Wähle Icon"
+
+msgid "Page "
+msgstr "Seite "
+
+msgid "Activate License"
+msgstr "Aktiviere Lizenz"
+
+msgid "Renew License"
+msgstr "Erneuere Lizenz"
+
+msgid "Congratulations! You have successfully installed and activated PRO version of ' ~ environment.getMenu().getMenuTitle() ~ ' plugin."
+msgstr "Herzlichen Glückwunsch. Du hast die Pro Version von ' ~ environment.getMenu().getMenuTitle() ~ ' aktiviert"
+
+msgid "Your premium support is expired in ' ~ days ~ ' days"
+msgstr "Dein Premium Support enden in ' ~ days ~ ' Tagen"
+
+msgid "You will not be able to update your pro version with expired license"
+msgstr "Mit abgelaufener Lizenz kann nicht erneuert werden"
+
+msgid "Activate"
+msgstr "Aktiviere"
+
+msgid "Authorization oauth_verifier is not specified."
+msgstr "Autorisierung oauth_verifier ist nicht angegeben"
+
+msgid "Tumblr authorization"
+msgstr "Tumblrauthorisierung"
+
+msgid "Upload your images from the Tumblr Media Library"
+msgstr "Laden Deine Bilder aus Deiner Tumbl Galerie"
+
+msgid "Upload from Tumblr"
+msgstr "Hochladen von Tumblr"
+
+msgid "FTP"
+msgstr "FTP"
+
+msgid "Upload your images from the FTP Server"
+msgstr "Hochladen vom FTP Server"
+
+msgid "Enter images folder name, e.g. my-images"
+msgstr "Eingabe des Ordnernamen mit den Bildern - z.B. "meien Bilder""
+
+msgid "Parse"
+msgstr "Erfassen"
+
+msgid "Note: images folder must be in wp-content/uploads/directory"
+msgstr "Hinweis: Bilder müssen in wp-content/uploads/directory sein"
+
+msgid "Host"
+msgstr "Host"
+
+msgid "Username"
+msgstr "Usernamen"
+
+msgid "Password"
+msgstr "Passwordt"
+
+msgid "Port"
+msgstr "Port"
+
+msgid "Enter the full path to images folder"
+msgstr "Eingabe des Pfades zum Bilderordner"
+
+msgid "Note: you need to specify the full path to images folder"
+msgstr "Hinweis: Der ganze Pfad zum Bilderordner muss angegeben werden"
+
+msgid "Please fill all fields"
+msgstr "Bitte alle Felder ausfüllen"
+
+msgid "Auto posts"
+msgstr "Automatische Postings"
+
+msgid "Number of posts"
+msgstr "Anzahl Postings"
+
+msgid "Select categories"
+msgstr "Auswahl Kategorien"
+
+msgid "New gallery successfully created"
+msgstr "Neue Galerie erstellt"
+
+msgid "Title successfully updated"
+msgstr "Titel erfolgreich geändert"
+
+msgid "Not enough data."
+msgstr "Nicht genügen daten"
+
+msgid "Preset successfully saved."
+msgstr "Voreinstellung erfolgreich gespeichert"
+
+msgid "The preset ID is not specified."
+msgstr "Die IP der Voreinstellung ist nicht angegeben"
+
+msgid "Preset successfully removed."
+msgstr "Voreinstellung erfolgreich gelöscht"
+
+msgid "Failed to find the preset."
+msgstr "Keine Voreinstellung gefunden"
+
+msgid "Preset successfully applied to the gallery."
+msgstr "Voreinstellung erfolgreich auf die galerie angewandt"
+
+msgid "Unnamed gallery"
+msgstr "Unbenamte Galerie"
+
+msgid "The identifier of the gallery is invalid"
+msgstr "Der Identifiere der Galerie ist ungültig"
+
+msgid "Title is empty"
+msgstr "Titel ist leer"
+
+msgid "Failed to rename the gallery"
+msgstr "Kann Galerie nicht umbenennen"
+
+msgid "Invalid gallery identifier specified"
+msgstr "Ungültige Galery angegeben"
+
+msgid "Failed to delete the gallery"
+msgstr "Fehler beim löschen der Galerie"
+
+msgid "Resources are does not exists"
+msgstr "Ressourcen existieren nicht"
+
+msgid "The identifier of the Gallery is not specified"
+msgstr "Ungültige Galery angegeben"
+
+msgid "New gallery"
+msgstr "Neue Galerie"
+
+msgid "Add Images"
+msgstr "Bilder hinzufügen"
+
+msgid "Add selected items"
+msgstr "Markierte Dateien hinzufügen"
+
+msgid "Cancel"
+msgstr "Cancel"
+
+msgid "You need to import images to your gallery before you can start using galleries"
+msgstr "Bevor Du beginnst Galerien zu nutzen musst Du Bilder importieren"
+
+msgid "Selected"
+msgstr "Ausgewählt"
+
+msgid "Create new gallery"
+msgstr "Erstelle neue Galerie"
+
+msgid "Choose Gallery Template.You can change template and settings on the next step."
+msgstr "Wähle Galerievorlage. Du kannst die Vorgabe und Einstellungen im nächsten Schritt ändern"
+
+msgid "Gallery Name:"
+msgstr "Name der Galerie"
+
+msgid "Choose Gallery Template."
+msgstr "Wähle Vorlage für die Galerie"
+
+msgid "Remove selected"
+msgstr "Entferne ausgewähltes"
+
+msgid "Select/unselect all posts"
+msgstr "Wähle alles/nichts aus"
+
+msgid "Images list"
+msgstr "Bilderliste"
+
+msgid "Preview"
+msgstr "Vorschau"
+
+msgid "Total Images: "
+msgstr "Gesamtanzahl Bilder: "
+
+msgid "There are %s photos in the gallery %s"
+msgstr "Es sind %s Photos in der Galerie %s"
+
+msgid "Are you sure you want to delete this gallery?"
+msgstr "Bist Du wirklich sicher das diese Galerie gelöscht werden soll?"
+
+msgid "Delete gallery"
+msgstr "Lösche Galerie"
+
+msgid "Shortcode:"
+msgstr "Shortcode:"
+
+msgid "PHPCode:"
+msgstr "PHPCode:"
+
+msgid "You have no galleries"
+msgstr "Keiner Galerien vorhanden"
+
+msgid "You don\'t have any galleries yet."
+msgstr "Bis jetzt hast Du keine Galerie"
+
+msgid "Want to create one right now?"
+msgstr "Willst Du jetzt eine erstellen?"
+
+msgid "What is a gallery"
+msgstr "Was ist eine Galerie"
+
+msgid "You can have an unlimited number of galleries, to which you can attach the preloaded pictures."
+msgstr "Du kannst unzählige Galerien benutzen um das angehängte Bild einzuordnen."
+
+msgid "Each gallery has a number of display settings and behaviors that you can save to presets and apply to other galleries."
+msgstr "Jede Galerie hat Einstellmöglichkeiten die die auf andere übertragen kannst."
+
+msgid "Gallery title can\'t be empty!"
+msgstr "Gallerietitel darf nicht leer sein"
+
+msgid "Gallery title:"
+msgstr "Titel der Galerie:"
+
+msgid "Select source to import from"
+msgstr "Quelle zum Import auswählen"
+
+msgid "Back to the gallery"
+msgstr "Zurück zur Galerie"
+
+msgid "Main"
+msgstr "Haupt"
+
+msgid "Captions"
+msgstr "Bildunterschrift"
+
+msgid "Categories"
+msgstr "Kategorie"
+
+msgid "Add images"
+msgstr "Bild hinzufügen"
+
+msgid "Import settings"
+msgstr "Import Voreinstellung"
+
+msgid "Your changes not saved. You really want to leave without saving?"
+msgstr "Deine Änderungen wurden nichtgespeichert. Wechseln ohne zu sichern?"
+
+msgid "Gallery Type"
+msgstr "Galerie - Typ"
+
+msgid "Number of Columns"
+msgstr "Anzahl Spalten"
+
+msgid "Responsive columns"
+msgstr "Spalten Responsive"
+
+msgid "Gallery Position"
+msgstr "Galerie Position"
+
+msgid "Images distance"
+msgstr "Raum zwischen den Bildern"
+
+msgid "Gallery width"
+msgstr "Galerie - Weite"
+
+msgid "Full screen width"
+msgstr "Fullscreen - Weite"
+
+msgid "Gallery height"
+msgstr "Gallerie - Höhe"
+
+msgid "Image width"
+msgstr "Bild - Breite"
+
+msgid "Image height"
+msgstr "Bild - Höhe"
+
+msgid "Image radius"
+msgstr "Bild - Radius"
+
+msgid "Image crop quality"
+msgstr "Ausschnitt - Qualität"
+
+msgid "Scroll Bar Color"
+msgstr "Farbe der Scrollbar"
+
+msgid "Scroll Bar Transparency"
+msgstr "Transparenz der Scrollbar"
+
+msgid "Border"
+msgstr "Rand"
+
+msgid "Available"
+msgstr "Verfügbar"
+
+msgid "Border Type"
+msgstr "Tand - Typ"
+
+msgid "Shadow"
+msgstr "Schatten"
+
+msgid "Shadow preset"
+msgstr "Schatten - Voreinstellung"
+
+msgid "When mouse is over"
+msgstr "Mouseovereffekt"
+
+msgid "Off"
+msgstr "Aus"
+
+msgid "Show mouse on"
+msgstr "Zeige Mauszeiger auf"
+
+msgid "Hide mouse on"
+msgstr "Verstecke Mauszeiger auf"
+
+msgid "Overlay image with shadow"
+msgstr "Overlay image mit Schatten"
+
+msgid "Shadow color"
+msgstr "Schattenfarbe"
+
+msgid "Shadow blur"
+msgstr "Schatten - Blur"
+
+msgid "Shadow X"
+msgstr "Schatten X"
+
+msgid "Shadow Y"
+msgstr "Schatten Y"
+
+msgid "Pop-up Image"
+msgstr "Pop-Up Bild"
+
+msgid "Popup box theme"
+msgstr "Popup Thema"
+
+msgid "Choose theme"
+msgstr "Wähle Thema"
+
+msgid "Disable on mobile"
+msgstr "Abschalten auf Mobile (Handy usw)"
+
+msgid "Popup Image Text"
+msgstr "Popup - Text"
+
+msgid "Caption"
+msgstr "Beschriftung"
+
+msgid "Title"
+msgstr "Titel"
+
+msgid "Alt text"
+msgstr "Alt-Text"
+
+msgid "Description"
+msgstr "Beschreibung"
+
+msgid "Hide Popup Captions"
+msgstr "Verstecke Popupbeschriftung"
+
+msgid "Transparency"
+msgstr "Transparenz"
+
+msgid "Slideshow"
+msgstr "Slideshow"
+
+msgid "Slideshow speed"
+msgstr "Sliedeshow Geschwindigkeit"
+
+msgid "Slideshow pause on hover"
+msgstr "Pause wenn Mauszeiger über der Slideshow"
+
+msgid "Slideshow autostart"
+msgstr "Slideshow Autostart"
+
+msgid "Popup Image size"
+msgstr "Popup Bildgröße"
+
+msgid "Effect"
+msgstr "Effekt"
+
+msgid "Choose effect"
+msgstr "Wähle Effekt"
+
+msgid "Personal captions"
+msgstr "persönliche beschriftung"
+
+msgid "Polaroid Style"
+msgstr "Polaroid Stil"
+
+msgid "Polaroid Image Animation"
+msgstr "Polaroid Bildanimation"
+
+msgid "Polaroid Frame Width"
+msgstr "Polaroid Bild-Weite"
+
+msgid "Text size"
+msgstr "Textgröße"
+
+msgid "Text horizontal align"
+msgstr "text horizontale Lage"
+
+msgid "Text vertical align"
+msgstr "text vertikale Lage"
+
+msgid "Mobile - show always caption"
+msgstr "Mobile (Handy usw) - zeige Beschreibung immer"
+
+msgid "Show icons"
+msgstr "Zeige Icons"
+
+msgid "Select effect"
+msgstr "Wähle Effekt"
+
+msgid "Animation"
+msgstr "Animation"
+
+msgid "Icons color"
+msgstr "iconfarbe"
+
+msgid "Icons hover color"
+msgstr "Icon hover Farbe"
+
+msgid "Background hover color"
+msgstr "Hintergrund hover Farbe"
+
+msgid "Icons size"
+msgstr "Icongröße"
+
+msgid "Distance between icons"
+msgstr "Iconabstand"
+
+msgid "Show overlay"
+msgstr "Zeige Overlay"
+
+msgid "Overlay color"
+msgstr "Overlayfarbe"
+
+msgid "Overlay transparency"
+msgstr "Trasparenz Overlay"
+
+msgid "Categorize images in the gallery"
+msgstr "Kategorisiere Bilder in der Galerie"
+
+msgid "Let user switch gallery pages"
+msgstr "User darf die Galerieseiten umschalten"
+
+msgid "Save settings as preset"
+msgstr "Save als Vorlage"
+
+msgid "Preset title:"
+msgstr "Vorlage - Titel"
+
+msgid "Delete preset"
+msgstr "Lösche Vorlage"
+
+msgid "Are you really want to delete preset \"%s\"?"
+msgstr "Bist Du sicher das Du Vorlage \"%s\" löschen willst?"
+
+msgid "Load settings from presets"
+msgstr "Lade Einstellung von Vorlage"
+
+msgid "Select preset:"
+msgstr "Wähle Vorlage"
+
+msgid "Failed to load the presets."
+msgstr "Fehler bein Laden der Vorlage."
+
+msgid "Currently you have no presets."
+msgstr "Aktuell keine Vorlagen vorhanden."
+
+msgid "Select \"Big image\" theme"
+msgstr "Auswahl \"Big image\" Thema"
+
+msgid "Select a theme"
+msgstr "Wähle ein Thema"
+
+msgid "Select"
+msgstr "Auswahl"
+
+msgid "Select overlay effect"
+msgstr "Auswahl Overlay Effekt"
+
+msgid "This effect requires icons be enabled. Enable Icons?"
+msgstr "Dies erfordert eingeschaltete Icons. Icons einschalten?"
+
+msgid "Select shadow preset"
+msgstr "Wähle Schattenvorlage"
+
+msgid "Select shadow"
+msgstr "Wähle Schatten"
+
+msgid "Import settings from gallery"
+msgstr "Importiere Einstellungen aus Galerie?"
+
+msgid "Here you can import settings from other galleries, but right now, you have only one gallery, create more - and see how it works"
+msgstr "Hier kannst Du Einstellungen aus anderen Galerien importieren. Du hast derzeit aber nur eine. Erzeuge neue - und schau wie es geht"
+
+msgid "Improve free version"
+msgstr "Verbesser die Free-Version"
+
+msgid "Select icons effects"
+msgstr "Auswahl Icon Effekte"
+
+msgid "Click on the icon to select effect"
+msgstr "Klicke auf die Icons um effekt auszuwählen"
+
+msgid "close"
+msgstr "schließen"
+
+msgid "next"
+msgstr "nächste"
+
+msgid "previous"
+msgstr "vorherige"
+
+msgid "start slideshow"
+msgstr "Starte Slideshow"
+
+msgid "stop slideshow"
+msgstr "Stoppe Slideshow"
+
+msgid "image"
+msgstr "Bild"
+
+msgid "of"
+msgstr "von"
+
+msgid "Choose source"
+msgstr "Wähle Quelle"
+
+msgid "Import from WordPress Media Library"
+msgstr "Importiere aus Deiner Wordpress Galerie"
+
+msgid "Import from social networks"
+msgstr "Import aus sozialen Netzwerken"
+
+msgid "Import from your Instagram account"
+msgstr "Import von Deinem Instagram Account"
+
+msgid "Import from your Flickr account"
+msgstr "Import von Deinem Flickr Account"
+
+msgid "Import from your Tumblr account"
+msgstr "Import von Deinem Tumblr Account"
+
+msgid "Import from your Facebook account"
+msgstr "Import von Deinem Facebook Account"
+
+msgid "Import from your FTP server"
+msgstr "Import von Deinem FTP Server"
+
+msgid "Get Pro to enable import"
+msgstr "Kaufe Pro Version um den Import einzuschalten"
+
+msgid "Properties"
+msgstr "Eigenschaften"
+
+msgid "Delete Image"
+msgstr "Lösche Bild"
+
+msgid "Sort To: "
+msgstr "Sortiere Zu: "
+
+msgid "Sort By: "
+msgstr "Sortiere bei: "
+
+msgid "Switch to the list view"
+msgstr "zur Listenansicht wechseln"
+
+msgid "Switch to the block view"
+msgstr "Zur Albumansicht wechseln"
+
+msgid "Apply"
+msgstr "Anwenden"
+
+msgid "The gallery is does not exists"
+msgstr "Diese Galerie existiert nicht"
+
+msgid "Currently this gallery has no images"
+msgstr "Aktuell ist kein Bild in dieser Galerie"
+
+msgid "Linked Images"
+msgstr "gelinkte Bilder"
+
+msgid "Instagram authorization"
+msgstr "Instagramm Autorisierung"
+
+msgid "Upload your images from the Instagram Media Library"
+msgstr "Upload aus Deiner Instagram Galerie"
+
+msgid "Upload from Instagram"
+msgstr "Hochladen von Instagram"
+
+msgid "Your message successfully send. We contact you soon."
+msgstr "Message erfolgreich versendet. Wir melden uns bald."
+
+msgid "Step-by-step Tutorial"
+msgstr "Step-by-Step Anleitung"
+
+msgid "Begin Step-by-step Tutorial"
+msgstr "Starte Step-by-Step Anleitung"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Website"
+msgstr "Webseite"
+
+msgid "Subject"
+msgstr "Betreff"
+
+msgid "Topic"
+msgstr "Überschrift"
+
+msgid "Plugin options"
+msgstr "Pluginoptionen"
+
+msgid "Report a bug"
+msgstr "Fehler melden"
+
+msgid "Require a new functionallity"
+msgstr "Neue Programmfunktion erfragen"
+
+msgid "Other"
+msgstr "Anderes"
+
+msgid "Message"
+msgstr "Message"
+
+msgid "Hello Supsystic Team!"
+msgstr "Hi Supsystic Team!"
+
+msgid "Some errors occurred while sending mail please send your message trough this contact form:"
+msgstr "Da ist was schief gelaufen beim absenden der Nachricht. Bitte kontaktiere uns über das folgende Kontaktformular"
+
+msgid "Unable to save chosen photo %s: %s"
+msgstr "Das ausgwählte Foto kann nicht gespeichert werden %s: %s"
+
+msgid "New Folder"
+msgstr "Neuer ordner"
+
+msgid "The title can\'t be empty"
+msgstr "Der Titel darf nicht leer sein"
+
+msgid "Failed to update position."
+msgstr "Fehler beim Update der Position."
+
+msgid "Position updated successfully!"
+msgstr "Position erfolgreich upgedatet!"
+
+msgid "Rename folder"
+msgstr "Ordner umbenennen"
+
+msgid "Folder name:"
+msgstr "Ordnername:"
+
+msgid "Add images to the gallery"
+msgstr "Bilder zur Galerie hinzufügen"
+
+msgid "Select the gallery:"
+msgstr "Auswahl der Galerie:"
+
+msgid "New folder"
+msgstr "Neuer Ordner"
+
+msgid "Add images to the new gallery"
+msgstr "Bilder zur neuen Galerie hinzufügen"
+
+msgid "Create new folder"
+msgstr "Erstelle neuen Ordner"
+
+msgid "Edit selected item"
+msgstr "Editiere ausgewählte Datei"
+
+msgid "Delete selected items"
+msgstr "Lösche ausgewählte Datei"
+
+msgid "Create new gallery from the selected items"
+msgstr "Erstelle neue Galerie aus den gewählten Dateien"
+
+msgid "New gallery from selected"
+msgstr "Neue Galerie aus der Auswahl"
+
+msgid "Add the selected items to the existing gallery"
+msgstr "Hinzufügen zu bestehender Galerie"
+
+msgid "Add selected to the gallery"
+msgstr "Hinzuügen zu Galerie"
+
+msgid "Upload your images from the WordPress Media Library"
+msgstr "Hochladen aus der Wordpress Galerie"
+
+msgid "All photos"
+msgstr "Alle Fotos"
+
+msgid "Drop photos here to move them from the folder"
+msgstr "Hier her ziehen um sie aus dem Ordner zu bewegen"
+
+msgid "Next"
+msgstr "Nächste"
+
+msgid "Close Tutorial"
+msgstr "Schließe Tutorial"
+
+msgid "Hello! This is the Gallery by Supsystic. "
+msgstr "Hi! Hier ist die Gallery by Supsystic."
+
+msgid "Here you can get help: watch the video tutorial or read FAQ and Documentation, make use of contact form. Also here requirements for server - Server Settings."
+msgstr "Hier bekommst Du Hilfe. schau das Video oder lies die FAQ und Dokumentation, nutze das Kontaktformular. Hier sind die Server Anforderungen. Server"
+
+msgid "First Step"
+msgstr "erster Schritt"
+
+msgid "To Create New Gallery select gallery template. You can change template and settings later. Now here are four different templates. With PRO version youâ€™ll get more features like Categories, Load More button, Post Feed (Content) gallery, Polaroid gallery and more. Enter name of the gallery and click â€œSaveâ€."
+msgstr "Zum erstellen einer neuen Galerie wähle eine Vorlage. Du kannst die Settings des Templates später ändern. Hier sind 4 verschiedene Templates. Mit der PRO Version bekommst Du mehr Möglichkeiten wie z.B. Kategorieren, mehr Buttons, die Polaroid Galerie usw."
+
+msgid "Second Step"
+msgstr "Zweiter Schritt"
+
+msgid "Now you are in the edit menu of your gallery. And the first thing you need to do are add media to the gallery. Click \"Add Images\" button."
+msgstr "Dies ist das Editiermenü Deiner Galerie. Als erstes brauchst Du Inhalte. Klicke auf "Bilder hinzufügen""
+
+msgid "Second Step-2"
+msgstr "Zweiter Schritt-2"
+
+msgid "<p>Import images in several ways:</p><p>Import from Wordpress Media Library/Upload files from your computer</p><p>Import from social networks</p><p>Instagram (in the Free version)</p><p>With PRO-version also will be available import from Flickr, Tumblr and Facebook.</p>"
+msgstr "<p>Verschiedene Importwege:</p><p>Import aus Wordpress/Upload vom Rechner</p><p>Import aus sozialen Netzwerken</p><p>Instagram (in der Free Version)</p><p>In der pro version ist zusätzlich der Import ais Flickr, Tumblr und Facebook möglich.</p>"
+
+msgid "Third Step"
+msgstr "Dritter Schritt"
+
+msgid "<p>Now you can see your image list. Here you can:</p><p>Change the order of images â€“ simply by dragging them manually.</p><p>Delete images</p><p>Add new images from different sources to the grid gallery â€“ click â€œAdd Imagesâ€ button and select the source to import from.</p><p><b>Caption tab</b> â€“ add caption to image â€“ it will be displayed on the caption effect of the gallery. Also here included the support of html-elements inside caption effect</p><p><b>SEO tab</b> â€“ manage image title and description</p><p><b>Link tab</b> â€“ attach links to image â€“ it will go to the link when you click the image.</p><p><b>Video tab</b> â€“ attach video url â€“ it will be displayed in a pop-up image when you click on the image.</p><p><b>Categories tab</b> â€“ add tags for image categories.</p><p>Now follow to the gallery settings â€“ Ñlick â€œPropertiesâ€ button.</p>"
+msgstr "<p>Jetzt siehst Du Deine Bilder. Jetzt kannst Du:</p><p>Die Bilder anders anordnen. Einfach manuel mit der Maus ziehen.</p><p>Bilder löschen</p><p>Neue Bilder aus anderen Quellen hinzufügen. Klicke auf dem "Bilder hinzufügen" Button und wähle die Quelle des Imports.</p><p><b>Beschreibungs Tab</b> Füge eine Beschreibung zum Bild hinzu. Diese wird als Effekt in der Galerie angezeigt. Hier ist ebenfalls die Nutzung von HTML-Elementen in der Beschreibung möglich</p><p><b>SEO Tab</b>Manage Bilditel und Beschreibungen</p><p><b>Link Tab</b> Füge Linsk zu Bildern hinzu. Es wird geöffnet wenn man darauf klickt.</p><p><b>Video Tab</b> Video URL hinzufügen. Diese wird als Popup zu sehen sein wenn man auf das Bild klickt.</p><p><b>Kategorieren Tab</b> Tagge Deine Bilderkategorieren</p><p>gehen wir zu den GalerieSettings. Klicke bitte auf "Eigenschaften.</p>"
+
+msgid "Fourth Step"
+msgstr "Vierter schritt"
+
+msgid "Gallery Properties: At the left side of the monitor you see a preview image in which will be seen changes made to the settings. This window for the settings of your gallery."
+msgstr "Galerie Eigenschaften: Auf der linken seite siehst Du eine Bildvorschau in welcher man die Änderungen an den Bildeigenscaften sieht. Jetzt sind die settings der Galerie zu sehen."
+
+msgid "Fourth Step-1"
+msgstr "Vierter Schritt-1"
+
+msgid "Five Step"
+msgstr "Fünfter Schritt"
+
+msgid "<p>Captions: In this tab you can manage the captions and make them your style.</p>"
+msgstr "<p>Bildunterschriften. Hier kannst Du Deine Bildunterschrieften managen und zu Deinem Stil machen.</p>"
+
+msgid "Six Step"
+msgstr "Sechster Schritt"
+
+msgid "Seven Step"
+msgstr "Siebter Schritt"
+
+msgid "<p>Posts: Here you can add posts and pages to your gallery and also manage them. Posts of gallery included in the PRO version of Gallery by Supsystic.</p>"
+msgstr "<p>Artikel: Hier kannst Du Artikel oder Texte zu Deine Galerie hinzufügen und managen. Postings sind mit der PRO Version von Supsystic möglich "
+
+msgid "Welcome to the"
+msgstr "Willkommene in der "
+
+msgid "Step-by-step tutorial"
+msgstr "Step-by-Step Anleitung"
+
+msgid "Thereâ€™re really many options of photo gallery plugin customization. So as soon as you close that page, Iâ€™ll show you step-by-step tutorial of how to use plugin. Hope it will be usefull for you :)"
+msgstr "Es gibt wirklich viele Optionen die Galerie an Deine Wünsche anzupassen. Schließet Du diese Seite bekommst Du eine Step-by-Step Anleitung wie dieses Plugin zu nutzen ist. Hoffentlich ist es nützlich."
+
+msgid "Support"
+msgstr "Support"
+
+msgid "We love our plugin and do the best to improve all features you want and fix all issues. But sometimes some issues happened or you canâ€™t find feature you want :) Donâ€™t worry, just <a href=\"//supsystic.com/plugins/photo-gallery?utm_source=plugin&utm_medium=welcomepage&utm_campaign=photo-gallery#contact\" target=\"_blank\"> contact us </a> . Weâ€™ll answer in an hour and fix all issues."
+msgstr "Wir lieben unser plugin und tun unser bestes um es zu Erweitern und zu warten. Aber machnmal passieren Fehler oder Du vermisst etwas. Dont worry, kontaktiere uns <a href=\"//supsystic.com/plugins/photo-gallery?utm_source=plugin&utm_medium=welcomepage&utm_campaign=photo-gallery#contact\" target=\"_blank\"> "
+
+msgid "Video Tutorial"
+msgstr "Video Anleitung"
+
+msgid "Frequently Asked Questions"
+msgstr "Frequently Asked Questions"
+
+msgid "Set the number of images per page."
+msgstr "Wieviel Bilder pro Seite?"
+
+msgid "Choose one of the default presets or create your own."
+msgstr "Wähle eine Voreinstellung oder erstelle Deine eigene."
+
+msgid "After configuring the settings click â€œSaveâ€ button."
+msgstr "Wenn Du fertig bist klicke den Speichern-Button."
+
+msgid "For more information for <a href=\"//supsystic.com/pagination/\" target=\"_blank\">Pagination</a> and for <a href=\"//supsystic.com/categories-gallery/\" target=\"_blank\">Categories</a>"
+msgstr "Fü rmehr Informationen (eng) <a href=\"//supsystic.com/pagination/\" target=\"_blank\">Pagination</a> and for <a href=\"//supsystic.com/categories-gallery/\" target=\"_blank\">Categories</a> "
+
+msgid "Go to Posts tab."
+msgstr "Gehe zum Artikel Tab"
+
+msgid "Choose one of post layout styles."
+msgstr "Wähle einen Artikel-Style"
+
+msgid "Add pages and posts."
+msgstr "Füge Seiten und Artikel zu."
+
+msgid "Choose what to show on posts layout in gallery."
+msgstr "Wähle was auf Seiten und dargestellt werden soll"
+
+msgid "Learn more about how to do this <a href=\"//supsystic.com/plugins/photo-gallery/#faq\" target=\"_blank\">here</a>."
+msgstr "Lerne wie das geht <a href=\"//supsystic.com/plugins/photo-gallery/#faq\" target=\"_blank\">here</a>. "
+
+msgid "All other FAQs"
+msgstr "Alle anderen FAQs"
+
+msgid "Let\'s Start!"
+msgstr "Los gehts"
+
+msgid "Roles"
+msgstr "Rollen"
+
+msgid "PRO option"
+msgstr "Pro Option"
+
+msgid "Edit image"
+msgstr "Editiere Bild"
+
+msgid "SEO"
+msgstr "SEO"
+
+msgid "Alternative text"
+msgstr "Alternativer Text"
+
+msgid "External link"
+msgstr "externer Link"
+
+msgid "Available in PRO version."
+msgstr "In der PRO Version erhätlich"
+
+msgid "Link"
+msgstr "Link"
+
+msgid "Open in new window"
+msgstr "Öffne in neuem Fenster"
+
+msgid "Embeded video"
+msgstr "eingebettetes Video"
+
+msgid "Video URL"
+msgstr "Video URL"
+
+msgid "Supports Youtube and Vimeo. URL will be converted to embed automatically."
+msgstr "Unterstützt Youtube und Vimeo. URL wird automatisch umgesetzt."
+
+msgid "Image"
+msgstr "Bild"
+
+msgid "Date"
+msgstr "Datum"
+
+msgid "Select %s"
+msgstr "Wähle %s"
+
+msgid "photo"
+msgstr "Foto"
+
+msgid "photos"
+msgstr "Fotos"
+
+msgid "Caption effect"
+msgstr "Bildunterschrift Effekt"
+
+msgid "Video"
+msgstr "Video"
+
+msgid "Linked images"
+msgstr "gelinkte Bilder"
+
+msgid "Crop"
+msgstr "Ausschneiden"
+
+msgid "Add nofollow attribute"
+msgstr "Setze nofollow Attribut"
+
+msgid "Choose images"
+msgstr "Wähle Bild"
+

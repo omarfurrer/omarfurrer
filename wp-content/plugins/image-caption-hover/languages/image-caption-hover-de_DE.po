@@ -1,0 +1,928 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"X-Generator: Poedit 1.8.8\n"
+"Language: de_DE\n"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:92
+#: image-caption-hover/includes/saved_options.php:119
+#: image-caption-hover/includes/saved_options.php:128
+#: image-caption-hover/includes/load_first.php:92
+#: image-caption-hover/includes/load_first.php:119
+#: image-caption-hover/includes/load_first.php:128
+msgid "(Pro Feature)"
+msgstr "(Pro-Merkmal)"
+
+#. Text in echo
+#: image-caption-hover/cpt.class.php:146
+msgid "60+ More Hover Effects"
+msgstr "60+ Mehr Hover-Effekte"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:165
+#: image-caption-hover/cpt.class.php:1
+#: image-caption-hover/includes/load_first.php:166
+msgid "Add New"
+msgstr "Neue hinzufügen"
+
+#. Text in echo
+#: image-caption-hover/cpt_inc/render_box_contents.php:25
+msgid "Add New Image"
+msgstr "Neues Bild hinzufügen"
+
+#. Text in echo
+#: image-caption-hover/widget.php:94
+msgid "Alt"
+msgstr "Alt"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Alternate Text"
+msgstr "Alternativer Text"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:22
+#: image-caption-hover/includes/load_first.php:22
+msgid "Alternate Text (img tag alt attribute)"
+msgstr "Alternativer Text (img tag alt-Attribut)"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Animation Speed"
+msgstr "Animations Geschwindigkeit"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:149
+#: image-caption-hover/includes/load_first.php:149
+msgid "Animation Speed (eg: 500ms or 1s)"
+msgstr "Animationsgeschwindigkeit (zB: 500ms oder 1s)"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Audio"
+msgstr "Audio"
+
+#. Text in echo
+#: image-caption-hover/cpt.class.php:143
+msgid "Audio Sound Effects on Hover"
+msgstr "Audio-Soundeffekte auf Hover"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:53
+#: image-caption-hover/cpt.class.php:155 image-caption-hover/widget.php:115
+#: image-caption-hover/includes/load_first.php:53
+msgid "Auto"
+msgstr "Auto"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Background Color"
+msgstr "Hintergrundfarbe"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:68
+#: image-caption-hover/includes/load_first.php:68
+msgid "Background Opacity"
+msgstr "Hintergrund Deckkraft"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:80
+#: image-caption-hover/includes/load_first.php:80
+msgid "Border"
+msgstr "Rand"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:110
+#: image-caption-hover/cpt.class.php:155
+#: image-caption-hover/includes/load_first.php:110
+msgid "Border Color"
+msgstr "Randfarbe"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:119
+#: image-caption-hover/cpt.class.php:155
+#: image-caption-hover/includes/load_first.php:119
+msgid "Border Radius"
+msgstr "Rahmenradius"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:92
+#: image-caption-hover/includes/load_first.php:92
+msgid "Border Style"
+msgstr "Border-Stil"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Border Type"
+msgstr "Border-Typ"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:83
+#: image-caption-hover/cpt.class.php:155
+#: image-caption-hover/includes/load_first.php:83
+msgid "Border Width"
+msgstr "Rahmenbreite"
+
+#. Text in echo
+#: image-caption-hover/cpt.class.php:149
+msgid "Borders and Frames"
+msgstr "Rahmen und Rahmen"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Bottom"
+msgstr "Boden"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:133
+#: image-caption-hover/includes/load_first.php:133
+msgid "Box Shadow for border. (h-shadow v-shadow blur spread color)"
+msgstr "Box Schatten für die Grenze. (H-Schatten v-Schatten Unschärfe verbreitet Farbe)"
+
+#. Text in echo
+#: image-caption-hover/cpt_inc/render_box_contents.php:32
+msgid "Cancel"
+msgstr "Stornieren"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:45
+#: image-caption-hover/cpt.class.php:155 image-caption-hover/widget.php:103
+#: image-caption-hover/includes/load_first.php:45
+msgid "Caption"
+msgstr "Bildunterschrift"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:50
+#: image-caption-hover/cpt.class.php:155
+#: image-caption-hover/includes/load_first.php:50
+msgid "Caption Alignment"
+msgstr "Bildausrichtung"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:62
+#: image-caption-hover/includes/load_first.php:62
+msgid "Caption Background Color"
+msgstr "Caption Background Color"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:48
+#: image-caption-hover/includes/load_first.php:48
+msgid "Caption Text (HTML tags can be used)"
+msgstr "Beschriftungstext (HTML-Tags können verwendet werden)"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:64
+#: image-caption-hover/includes/load_first.php:64
+msgid "Caption Text Color"
+msgstr "Beschriftung Textfarbe"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Caption Wrapper"
+msgstr "Beschriftungs-Wrapper"
+
+#. Text in echo
+#: image-caption-hover/widget.php:113
+msgid "Caption alignment"
+msgstr "Beschriftungsausrichtung"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:54
+#: image-caption-hover/cpt.class.php:155 image-caption-hover/widget.php:116
+#: image-caption-hover/includes/load_first.php:54
+msgid "Center"
+msgstr "Center"
+
+#. Text in echo
+#: image-caption-hover/includes/settings.php:44
+#: image-caption-hover/plugin.class.php:164
+msgid "Changes Saved"
+msgstr "Änderungen gespeichert"
+
+#. Text in echo
+#: image-caption-hover/cpt_inc/settings_box.php:36
+msgid "Check to enable shortcodes in caption text box"
+msgstr "Aktivieren Sie Shortcodes im Beschriftungstextfeld"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Choose background color for caption"
+msgstr "Wählen Sie Hintergrundfarbe für Beschriftung"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Choose border type (available in pro version)"
+msgstr "Wählen Sie den Randtyp (in der Pro-Version verfügbar)"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Choose caption overlay position (available in pro version)"
+msgstr "Wählen Sie eine Beschriftungs-Overlay-Position (in der Pro-Version verfügbar)"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Choose color for border (available in pro version)"
+msgstr "Farbe für Rand wählen (in der Pro-Version verfügbar)"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Choose hover style"
+msgstr "Wählen Sie hover-Stil"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Choose text color for caption"
+msgstr "Wählen Sie Textfarbe für Beschriftung"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Choose to open link in new tab or same"
+msgstr "Wählen Sie, um den Link in einem neuen Tab zu öffnen"
+
+#. Text in echo
+#: image-caption-hover/cpt.class.php:145
+msgid "Custom Animation Speed"
+msgstr "Benutzerdefinierte Animationsgeschwindigkeit"
+
+#. Text in echo
+#: image-caption-hover/cpt_inc/settings_box.php:40
+msgid "Custom CSS"
+msgstr "Benutzerdefinierte CSS"
+
+#. Text in echo
+#: image-caption-hover/cpt.class.php:148
+msgid "Custom Width and Height"
+msgstr "Benutzerdefinierte Breite und Höhe"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:96
+#: image-caption-hover/cpt.class.php:155
+#: image-caption-hover/includes/load_first.php:96
+msgid "Dashed"
+msgstr "Gestrichelt"
+
+#. Text in echo
+#: image-caption-hover/includes/settings.php:30
+msgid "Default"
+msgstr "Standard"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:163
+#: image-caption-hover/cpt_inc/settings.php:5
+#: image-caption-hover/includes/load_first.php:164
+msgid "Delete"
+msgstr "Löschen"
+
+#. Text in echo
+#: image-caption-hover/cpt_inc/settings_box.php:8
+msgid "Display"
+msgstr "Anzeigen"
+
+#. Text in echo
+#: image-caption-hover/cpt.class.php:147
+msgid "Display Caption at Bottom or Top"
+msgstr "Bildunterschrift unten oder oben"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:95
+#: image-caption-hover/cpt.class.php:155
+#: image-caption-hover/includes/load_first.php:95
+msgid "Dotted"
+msgstr "Dotted"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:98
+#: image-caption-hover/cpt.class.php:155
+#: image-caption-hover/includes/load_first.php:98
+msgid "Double"
+msgstr "Doppelt"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:164
+#: image-caption-hover/includes/load_first.php:165
+msgid "Duplicate"
+msgstr "Duplikat"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:1
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#. Text in echo
+#: image-caption-hover/cpt.class.php:459
+msgid "Editor"
+msgstr "Herausgeber"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:33
+#: image-caption-hover/includes/load_first.php:33
+msgid "Eg: [ilightbox id=\"7\"], Leave blank if not sure"
+msgstr "Beispiel: [ilightbox id = \"7\"], Leer lassen, wenn nicht sicher"
+
+#. Text in echo
+#: image-caption-hover/cpt.class.php:509
+#: image-caption-hover/cpt_inc/settings_box.php:32
+msgid "Enable"
+msgstr "Aktivieren"
+
+#. Text in echo
+#: image-caption-hover/includes/settings.php:31
+msgid "First Tap Hover, Second Tap Navigate"
+msgstr "Zuerst Tippen Sie auf Hover, Second Tap Navigate"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Full"
+msgstr "Voll"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Full body of the window"
+msgstr "Ganzkörper des Fensters"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:166
+#: image-caption-hover/grid_builder.php:44
+#: image-caption-hover/includes/load_first.php:167
+msgid "Get Shortcode"
+msgstr "Kurzcode erhalten"
+
+#. Text in echo
+#: image-caption-hover/grid_builder.php:2
+msgid "Grid Builder"
+msgstr "Grid Builder"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:99
+#: image-caption-hover/cpt.class.php:155
+#: image-caption-hover/includes/load_first.php:99
+msgid "Groove"
+msgstr "Rille"
+
+#. Text in echo
+#: image-caption-hover/cpt.class.php:134
+msgid "Having trouble setting up?"
+msgstr "Haben Sie Probleme bei der Einrichtung?"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Heading 1"
+msgstr "Überschrift 1"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Heading 2"
+msgstr "Überschrift 2"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Heading 3"
+msgstr "Überschrift 3"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Heading 4"
+msgstr "Überschrift 4"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Heading 5"
+msgstr "Überschrift 5"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Heading 6"
+msgstr "Überschrift 6"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Height"
+msgstr "Höhe"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:41
+#: image-caption-hover/includes/load_first.php:41
+msgid "Height eg: 100px or 50%"
+msgstr "HeightHeight zB: 100px oder 50%"
+
+#. Text in echo
+#: image-caption-hover/includes/settings.php:36
+msgid "Here you can control touch behavior for links"
+msgstr "Hier können Sie das Touch-Verhalten für Links steuern"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:137
+#: image-caption-hover/includes/load_first.php:137
+msgid "Hover"
+msgstr "Schweben"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Hover Effect"
+msgstr "Hover-Effekt"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:140
+#: image-caption-hover/includes/load_first.php:140
+msgid "Hover Style"
+msgstr "Hover-Stil"
+
+#. Text in echo
+#: image-caption-hover/widget.php:174
+msgid "Hover style"
+msgstr "Hover-Stil"
+
+#. Text in echo
+#: image-caption-hover/widget.php:137
+msgid "Hover styles"
+msgstr "Hover-Stile"
+
+#. Text in echo
+#: image-caption-hover/plugin.class.php:141
+msgid "How to Use"
+msgstr "Wie benutzt man"
+
+#. Text in echo
+#: image-caption-hover/cpt.class.php:135
+msgid "How to use"
+msgstr "Wie benutzt man"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:3
+#: image-caption-hover/widget.php:71
+#: image-caption-hover/includes/load_first.php:3
+msgid "Image"
+msgstr "Image"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:1
+#: image-caption-hover/includes/load_first.php:1
+msgid "Image Caption Hover"
+msgstr "Bildunterschrift Hover"
+
+#. Text in echo
+#: image-caption-hover/includes/settings.php:2
+#: image-caption-hover/plugin.class.php:140
+msgid "Image Caption Hover Settings"
+msgstr "Bildunterschrift Hover-Einstellungen"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Image URL"
+msgstr "Bild URL"
+
+#. Text in echo
+#: image-caption-hover/cpt_inc/settings_box.php:17
+msgid "Images in a row"
+msgstr "Bilder in einer Reihe"
+
+#. Text in echo
+#: image-caption-hover/cpt_inc/render_box_contents.php:31
+#: image-caption-hover/grid_builder.php:36
+msgid "Insert"
+msgstr "Einfügen"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:101
+#: image-caption-hover/cpt.class.php:155
+#: image-caption-hover/includes/load_first.php:101
+msgid "Inset"
+msgstr "Einsatz"
+
+#. Text in echo
+#: image-caption-hover/grid_builder.php:3
+msgid "It is used to display single images in a row"
+msgstr "Es wird verwendet, um einzelne Bilder in einer Reihe anzuzeigen"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "It will be used as alt attribute of image tag"
+msgstr "Es wird als alt-Attribut von Image-Tag verwendet werden"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "It will be used as title attribute of image tag. Square and Circle Effects will take it as heading"
+msgstr "Es wird als Titelattribut des Image-Tags verwendet. Quadrat und Kreis Effekte nehmen es als Überschrift"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "It will open above link in popup on clicking (available in pro version)"
+msgstr "Es öffnet sich über Link in Popup beim Klicken (erhältlich in Pro-Version)"
+
+#. Text in echo
+#: image-caption-hover/grid_builder.php:2
+msgid "It will work in Pro Version"
+msgstr "Es wird in Pro Version funktionieren"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:57
+#: image-caption-hover/cpt.class.php:155 image-caption-hover/widget.php:119
+#: image-caption-hover/includes/load_first.php:57
+msgid "Justify"
+msgstr "Rechtfertigen"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:38
+#: image-caption-hover/includes/load_first.php:38
+msgid "Leaving blank will take container\\'s width"
+msgstr "Leaving wird die Breite des Containers nehmen"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:56
+#: image-caption-hover/cpt.class.php:155 image-caption-hover/widget.php:118
+#: image-caption-hover/includes/load_first.php:56
+msgid "Left"
+msgstr "Links"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "LightBox"
+msgstr "LightBox"
+
+#. Text in echo
+#: image-caption-hover/includes/load_first.php:74
+msgid "Link (Paste URL here or leave blank)"
+msgstr "Link (URL hier einfügen oder leer lassen)"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:74
+msgid "Link (paste URL here or leave blank)"
+msgstr "Link (URL hier einfügen oder leer lassen)"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Link Target"
+msgstr "Link Ziel"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:76
+#: image-caption-hover/includes/load_first.php:76
+msgid "Link Target (write _blank for opening link in new window)"
+msgstr "Link Target (schreiben Sie _blank zum Öffnen des Links in einem neuen Fenster)"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Link To"
+msgstr "Link zu"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:11
+#: image-caption-hover/cpt.class.php:433 image-caption-hover/widget.php:79
+#: image-caption-hover/includes/load_first.php:11
+msgid "Media"
+msgstr "Medien"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:115
+#: image-caption-hover/includes/load_first.php:115
+msgid "Name of color or color code."
+msgstr "Name der Farbe oder des Farbcodes."
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:1
+msgid "New"
+msgstr "Neu"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "New Window"
+msgstr "Neues Fenster"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:1
+msgid "No Image Caption Hover found"
+msgstr "Keine Bildunterschrift Hover gefunden"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:1
+msgid "No Image Caption Hover found in Trash"
+msgstr "Keine Bildunterschrift Hover gefunden im Papierkorb"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "None"
+msgstr "Keiner"
+
+#. Text in echo
+#: image-caption-hover/grid_builder.php:21
+msgid "Number of Columns in Row"
+msgstr "Anzahl der Spalten in Zeile"
+
+#. Text in echo
+#: image-caption-hover/cpt.class.php:136
+msgid "OR"
+msgstr "ODER"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:102
+#: image-caption-hover/cpt.class.php:155
+#: image-caption-hover/includes/load_first.php:102
+msgid "Outset"
+msgstr "Anfang"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Overlay Position"
+msgstr "Überlagerungsposition"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Parent frameset"
+msgstr "Übergeordnetes Frameset"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:1
+msgid "Parent:"
+msgstr "Elternteil:"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:6
+#: image-caption-hover/widget.php:72
+#: image-caption-hover/includes/load_first.php:6
+msgid "Paste URL or use from Media"
+msgstr "URL einfügen oder aus Media verwenden"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:157
+#: image-caption-hover/includes/load_first.php:157
+msgid "Preview"
+msgstr "Vorschau"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:150
+#: image-caption-hover/includes/load_first.php:150
+msgid "Pro Feature"
+msgstr "Pro-Funktion"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Provide URL here or leave blank to disable link"
+msgstr "Geben Sie URL hier oder lassen Sie leer, um den Link zu deaktivieren"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Provide animation speed Eg: 500ms or 1s (available in pro version)"
+msgstr "Animationsgeschwindigkeit z. B. 500ms oder 1s (in der Pro-Version verfügbar)"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Provide border width Eg: 5px, leave blank to disable border (available in pro version)"
+msgstr "Bieten Sie Randbreite an, zB: 5px, leer lassen, um den Rand zu deaktivieren (in der Pro-Version verfügbar)"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Provide caption text here, you can also use rich editor to insert caption. It should be plain text if you are using circle or square effects"
+msgstr "Geben Sie Beschriftung Text hier, können Sie auch Rich-Editor, um Beschriftung einzufügen. Es sollte Klartext sein, wenn Sie Kreis oder quadratische Effekte verwenden"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Provide height for image Eg: 150px or 50%. Leave blank for responsive (available in pro version)"
+msgstr "Geben Sie Höhe für Bild zB: 150px oder 50%. Leer lassen für reaktionsschnelle (verfügbar in Pro-Version)"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Provide image url, you can also use media library to insert url"
+msgstr "Geben Sie Bild-URL, können Sie auch Medien-Bibliothek, um URL einzufügen"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Provide mp3 music to play on hover (available in pro version)"
+msgstr "Bereitstellung von mp3-Musik auf hover zu spielen (erhältlich in Pro-Version)"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Provide radius for border eg: 5px or 50% (available in pro version)"
+msgstr "Geben Sie Radius für Rahmen zB: 5px oder 50% (vorhanden in der Proversion)"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Provide width for image Eg: 150px or 50%. Leave blank for responsive (available in pro version)"
+msgstr "Geben Sie Breite für Bild zB: 150px oder 50%. Leer lassen für reaktionsschnelle (verfügbar in Pro-Version)"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:124
+#: image-caption-hover/includes/load_first.php:124
+msgid "Radius of border eg: 5px or 50%."
+msgstr "Radius der Umrandung zB: 5px oder 50%."
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:158
+#: image-caption-hover/includes/load_first.php:158
+msgid "Refresh Preview"
+msgstr "Vorschau aktualisieren"
+
+#. Text in echo
+#: image-caption-hover/cpt.class.php:144
+msgid "Responsive PopUp"
+msgstr "Ansprechende PopUp"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:100
+#: image-caption-hover/cpt.class.php:155
+#: image-caption-hover/includes/load_first.php:100
+msgid "Ridge"
+msgstr "Grat"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:55
+#: image-caption-hover/cpt.class.php:155 image-caption-hover/widget.php:117
+#: image-caption-hover/includes/load_first.php:55
+msgid "Right"
+msgstr "Recht"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Same Window"
+msgstr "Gleiches Fenster"
+
+#. Text in echo
+#: image-caption-hover/plugin.class.php:162
+msgid "Save Changes"
+msgstr "Änderungen speichern"
+
+#. Text in echo
+#: image-caption-hover/includes/settings.php:42
+msgid "Save Settings"
+msgstr "Einstellungen speichern"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:1
+msgid "Search"
+msgstr "Suche"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:11
+#: image-caption-hover/includes/load_first.php:11
+msgid "Select"
+msgstr "Wählen"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:10
+#: image-caption-hover/includes/load_first.php:10
+msgid "Select Image"
+msgstr "Bild auswählen"
+
+#. Text in echo
+#: image-caption-hover/includes/settings.php:21
+msgid "Select the Role who can manage Image Caption Hover options."
+msgstr "Wählen Sie die Rolle aus, die die Bild-Caption-Hover-Optionen verwalten kann."
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:128
+#: image-caption-hover/cpt.class.php:155
+#: image-caption-hover/includes/load_first.php:128
+msgid "Shadow"
+msgstr "Schatten"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Shadow for images (available in pro version)"
+msgstr "Schatten für Bilder (verfügbar in Pro-Version)"
+
+#. Text in echo
+#: image-caption-hover/cpt_inc/settings_box.php:28
+msgid "Shortcodes in Caption"
+msgstr "Shortcodes in Beschriftung"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:97
+#: image-caption-hover/cpt.class.php:155
+#: image-caption-hover/includes/load_first.php:97
+msgid "Solid"
+msgstr "Solide"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:106
+#: image-caption-hover/includes/load_first.php:106
+msgid "Some styles may depend on border color."
+msgstr "Einige Stile können von der Randfarbe abhängen."
+
+#. Text in echo
+#: image-caption-hover/cpt_inc/settings_box.php:24
+msgid "Space between each column"
+msgstr "Raum zwischen jeder Spalte"
+
+#. Text in echo
+#: image-caption-hover/cpt_inc/settings_box.php:21
+msgid "Space between images"
+msgstr "Raum zwischen Bildern"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Text Color"
+msgstr "Textfarbe"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155 image-caption-hover/widget.php:85
+msgid "Title"
+msgstr "Titel"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:70
+#: image-caption-hover/includes/load_first.php:70
+msgid "Title (for your reference)"
+msgstr "Titel (als Ihre Referenz)"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:18
+#: image-caption-hover/includes/load_first.php:18
+msgid "Title (img tag title attribute)"
+msgstr "Titel (img tag title-Attribut)"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Top"
+msgstr "Oben"
+
+#. Text in echo
+#: image-caption-hover/includes/settings.php:27
+msgid "Touch Devices Behavior for Links"
+msgstr "Touch Devices Verhalten für Links"
+
+#. Text in echo
+#: image-caption-hover/cpt.class.php:153
+#: image-caption-hover/plugin.class.php:140
+msgid "Unlock Pro Features"
+msgstr "Unlock Pro Features"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:14
+#: image-caption-hover/includes/load_first.php:14
+msgid "Use media to upload image"
+msgstr "Verwenden Sie Medien zum Hochladen von Bildern"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:1
+msgid "View"
+msgstr "Aussicht"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:1
+msgid "View All"
+msgstr "Alle anzeigen"
+
+#. Text in echo
+#: image-caption-hover/includes/settings.php:11
+msgid "Who Can Edit?"
+msgstr "Wer kann bearbeiten?"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Width"
+msgstr "Breite"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:37
+#: image-caption-hover/includes/load_first.php:37
+msgid "Width eg: 100px or 50%"
+msgstr "Breite zB: 100px oder 50%"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:88
+#: image-caption-hover/includes/load_first.php:88
+msgid "Width of border, eg: 15px. Leaving blank will disable border."
+msgstr "Breite des Rahmens, zB: 15px. Leaving wird den Rand deaktivieren."
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Wrap caption in markup. Please select auto if you are using editor"
+msgstr "Wrap-Beschriftung in Markup. Wählen Sie auto, wenn Sie Editor verwenden"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Wrap caption in markup. Please select none if you are using editor"
+msgstr "Wrap-Beschriftung in Markup. Bitte wählen Sie keine, wenn Sie Editor verwenden"
+
+#. Text in echo
+#: image-caption-hover/widget.php:105
+msgid "You can also use HTML tags here"
+msgstr "Sie können hier auch HTML-Tags verwenden"
+
+#. Text in echo
+#: image-caption-hover/cpt_inc/settings_box.php:47
+msgid "You can define your own styles here"
+msgstr "Hier können Sie Ihre eigenen Stile definieren"
+
+#. Text in echo
+#: image-caption-hover/cpt.class.php:150
+msgid "Your existing Images and Captions will remain saved"
+msgstr "Ihre vorhandenen Bilder und Untertitel bleiben gespeichert"
+
+#. Text in echo
+#: image-caption-hover/cpt.class.php:137
+msgid "contact us for help"
+msgstr "Kontaktieren Sie uns für Hilfe"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:28
+#: image-caption-hover/includes/load_first.php:28
+msgid "iLightBox Shortcode"
+msgstr "iLightBox-Kurzcode"

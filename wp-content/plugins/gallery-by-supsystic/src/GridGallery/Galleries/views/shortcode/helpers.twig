@@ -1,0 +1,366 @@
+{% set figureStyle %}
+	{% if settings.thumbnail.border.type != 'none' %}
+		border: {{ settings.thumbnail.border.width }}px {{ settings.thumbnail.border.type }} {{ settings.thumbnail.border.color }};
+	{% endif %}
+	border-radius: {{ settings.thumbnail.border.radius ~ settings.thumbnail.border.radius_unit|replace(['px', '%']) }};
+	{% if settings.use_shadow == 1 %}
+		box-shadow: {{ settings.thumbnail.shadow.x }}px {{ settings.thumbnail.shadow.y }}px {{ settings.thumbnail.shadow.blur }}px {{ settings.thumbnail.shadow.color }};
+	{% endif %};
+	margin: {{ settings.area.distance }}px;
+	{#-webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);#}
+	{% if settings.area.grid == '2' %}
+		height:{{ settings.area.photo_height ~ settings.area.photo_height_unit|replace(['px', '%']) }};
+	{% endif %}
+	{% if settings.area.grid == '2' %}
+		width:auto;
+	{% else %}
+		width:{{ settings.area.photo_width ~ settings.area.photo_width_unit|replace(['px', '%']) }};
+	{% endif %}
+{% endset %}
+
+{% set aTitle %}
+	{% if photo.attachment.description is defined and photo.attachment.description is not empty %}
+		{{ photo.attachment.description }}
+	{% else %}
+		{{ photo.attachment.title }}
+	{% endif %}
+{% endset %}
+
+{% set aClass %}
+	{% if (photo.attachment.external_link is not defined or photo.attachment.external_link|trim is empty) and (photo.attachment.video is not defined or photo.attachment.video|trim is empty) and settings.box.type == '0' %}
+		gg-colorbox
+	{% endif %}
+
+	{% if photo.attachment.video is defined and photo.attachment.video|trim is not empty and settings.box.type == '0' %}
+		gg-video
+	{% endif %}
+
+	{% if settings.box.type == '2' and (photo.attachment.external_link is not defined or photo.attachment.external_link|trim is empty or (photo.attachment.video is defined and photo.attachment.video|trim is not empty)) %}
+		pbox
+	{% endif %}
+{% endset %}
+
+{% set aHref %}
+	{% if photo.attachment.external_link is defined and photo.attachment.external_link is not empty %}
+		{{ photo.attachment.external_link|force_http }}
+		{% set link = true %}
+	{% else %}
+		{{ photo.attachment.url }}
+	{% endif %}
+{% endset %}
+
+{% set aRel %}
+	{% if link and photo.attachment.rel is defined %}
+		{{ photo.attachment.rel }}
+	{% endif %}
+	{% if link == false and settings.box.enabled == 'false' %}
+		nofollow
+	{% endif %}
+{% endset %}
+
+{% spaceless %}
+	{% block figure_before %}
+		{% if settings.icons is not defined or settings.icons.enabled == 'false' %}
+			<a
+				{% block a_attributes %}
+					id="gg-{{ gallery.id }}-{{ photo.id }}"
+					class="gg-link {{ aClass|trim }} {% if settings.displayFirstPhoto == 'on' and index > 0 %} hidden-item {% endif %}"
+					href="{{ aHref|trim|htmlspecialchars_decode }}"
+					target="{{ photo.attachment.target|default('_self') }}"
+					title="{{ aTitle|trim }}"
+					{% if settings.box.type == '1' and link == false %}
+						data-rel="prettyPhoto[pp_gal]"
+					{% else %}
+						rel="{{ aRel }}"
+					{% endif %}
+					{% if link == true %}
+						data-type="link"
+					{% endif %}
+					style="border-radius: {{ settings.thumbnail.border.radius ~ settings.thumbnail.border.radius_unit|replace(['px', '%']) }};"
+				{% endblock %}
+			>
+		{% endif %}
+	{% endblock %}
+
+	{% set galleryType %}
+		{% if settings.thumbnail.overlay.enabled == 'false' %}
+			{% if settings.icons is defined and settings.icons.enabled == 'true'%}
+				icons
+			{% else %}
+				none
+			{% endif %}
+		{% else %}
+			{% if settings.icons is defined and settings.icons.enabled == 'true' %}
+				{% if settings.thumbnail.overlay.personal == 'true' and photo.attachment.captionEffect in ['icons', 'icons-scale', 'icons-sodium-left', 'icons-sodium-top', 'icons-nitrogen-top'] %}
+					{{ photo.attachment.captionEffect }}
+				{% else %}
+					{{ settings.thumbnail.overlay.effect }}
+				{% endif %}
+			{% else %}
+				{% if settings.thumbnail.overlay.personal == 'true' %}
+					{{ photo.attachment.captionEffect|default(settings.thumbnail.overlay.effect) }}
+				{% else %}
+					{{ settings.thumbnail.overlay.effect }}
+				{% endif %}
+			{% endif %}
+		{% endif %}
+	{% endset %}
+
+		<FIGURE
+			{% block figure_attributes %}
+				class="grid-gallery-caption
+				{% if settings.displayFirstPhoto == 'on' and index > 0 %} hidden-item {% endif %}
+				{% if settings.mouse_shadow == '1' and settings.use_shadow == '1' %}
+					shadow-show
+				{% endif %}
+				{% if settings.mouse_shadow == '2' and settings.use_shadow == '1' %}
+				 shadow-hide
+				{% endif %}"
+				data-grid-gallery-type="{{ galleryType|trim }}"
+				style="display:none;{{ figureStyle|trim }}"
+				{% if settings.icons.enabled == 'true' %}
+					{% set galleryType %}
+						{% if 'icons' in settings.thumbnail.overlay.effect %}
+							{{ settings.thumbnail.overlay.effect }}
+						{% else %}
+							icons
+						{% endif %}
+					{% endset %}
+				{% endif %}
+			{% endblock %}>
+			<div class="crop
+				{% if settings.thumbnail.shadow.overlay == '1' and settings.use_shadow == '1' %}
+					image-overlay
+				{% endif %}"
+				style="
+				{% if settings.area.grid == '0' or settings.area.grid == '3' %}
+					width:{{ settings.area.photo_width ~ settings.area.photo_width_unit|replace(['px', '%']) }};
+					height:{{ settings.area.photo_height ~ settings.area.photo_height_unit|replace(['px', '%']) }};
+					overflow:hidden;
+				{% endif %}">
+
+				{% set width, height, crop = 0, 0, 0 %}
+
+				{% if settings.area.photo_width_unit == 0 %}
+					{% set width = settings.area.photo_width %}
+				{% else %}
+					{# if gallery has fixed width , photo width could be counted , otherwise return full size image #}
+					{% if settings.area.width_unit == 0 %}
+						{% set width = (settings.area.width / 100 * settings.area.photo_width)|round  %}
+					{% else %}
+						{% set width = null %}
+					{% endif %}
+				{% endif %}
+
+				{% if settings.area.photo_height_unit == 0 %}
+					{% set height = settings.area.photo_height %}
+				{% else %}
+					{# if photo will be sized by % of height gallery return full size photo #}
+					{% set height = null %}
+					{#{% if photo.attachment.height < 500 %}#}
+						{#{% set height = null %}#}
+					{#{% else %}#}
+						{#{% set height = (photo.attachment.height / 100 * settings.area.photo_height)|round  %}#}
+					{#{% endif %}#}
+				{% endif %}
+
+				{% if settings.area.grid == 0 or settings.area.grid == 3 %}
+					{% set crop = 1 %}
+				{% endif %}
+
+				{% if settings.area.grid == 1 %}
+					{% set height = null %}
+				{% endif %}
+
+				{% if settings.area.grid == 2 %}
+					{% set width = null %}
+				{% endif %}
+
+
+				<img
+					{% block image_attributes %}
+					src="{{ get_attachment(photo.attachment.id, width, height, photo.attachment.cropPosition, settings.thumbnail.cropQuality|default('100')) }}"
+					alt="{% if photo.attachment.alt is empty or photo.attachment.alt == " " %}{{ photo.attachment.title }}{% else %}{{ photo.attachment.alt }}{% endif %}"
+					title="{% if photo.attachment.description is not empty %}{{ photo.attachment.description }}{% else %}{{ photo.attachment.title }}{% endif %}"
+					data-description="{% if photo.attachment.description is not empty %}{{ photo.attachment.description }}{% else %}{{ photo.attachment.title }}{% endif %}"
+					data-caption="{% if photo.attachment.caption is not empty %}{{ photo.attachment.caption|e }}{% else %}{{ photo.attachment.title|e }}{% endif %}"
+					data-title="{{ photo.attachment.title }}"
+					style="
+					{% if settings.area.photo_width_unit == 0 and settings.area.photo_width is not empty %}
+					width:{{ settings.area.photo_width }}px;
+					{% endif %}
+					{% if settings.area.photo_height_unit == 0 and settings.area.photo_height is not empty %}
+					height:{{ settings.area.photo_height }}px;
+					{% endif %}
+					"
+					{% endblock %}
+				/>
+			</div>
+
+			{% set figcaptionStyle %}
+				{% block figcaption_style %}
+					{% if settings.icons is defined and settings.icons.enabled == 'true' %}
+						font-family:{{ settings.thumbnail.overlay.font_family }};
+						{% if settings.icons.overlay_enabled == 'true' %}
+							background-color:{{ settings.icons.overlay_color|default('#3498db') }};
+							height : 100%;
+							{#z-index: 999;#}
+						{% else %}
+							height : 100%;
+							background-color: transparent;
+						{% endif %}
+					{% else %}
+						color:{{ settings.thumbnail.overlay.foreground }};
+						background-color:{{ settings.thumbnail.overlay.background }};
+						font-size:{{ settings.thumbnail.overlay.text_size }}{{ settings.thumbnail.overlay.text_size_unit|replace(['px', '%', 'em']) }};
+						text-align:{{ settings.thumbnail.overlay.text_align }};
+						font-family:{{ settings.thumbnail.overlay.font_family }};
+						{% if settings.thumbnail.overlay.effect == 'none' or settings.thumbnail.overlay.enabled == 'false' %}
+							opacity:1;
+							bottom:0;
+						{% endif %}
+					{% endif %}
+				{% endblock %}
+			{% endset %}
+
+			<FIGCAPTION
+				{% block figcaption_attributes %}
+					{% if settings.icons is defined and settings.icons.enabled == 'true' %}
+						data-alpha="{{ settings.icons.overlay_transparency|default(5)|trim }}"
+					{% endif %}
+					data-alpha="{{ settings.thumbnail.overlay.transparency|trim }}"
+					style="{{ figcaptionStyle|trim }}"
+				{% endblock %}>
+
+				<div
+					class="grid-gallery-figcaption-wrap"
+					style="
+					{% if settings.icons is not defined or settings.icons.enabled == 'false' %}
+						vertical-align:{{ settings.thumbnail.overlay.position }};
+					{% endif %}">
+
+					{% block figcaption_wrap %}
+						{# Icons #}
+						{% if settings.icons is defined and settings.icons.enabled == 'true' %}
+							<div
+								class="hi-icon-wrap {{ settings.icons.effect[0:length-1] }} {{ settings.icons.effect }}"
+								data-margin="{{ settings.icons.margin|default(5) }}"
+							>
+								{% if photo.attachment.video is defined and photo.attachment.video is not empty %}
+
+									{% set videoUrl %}
+										{% if 'youtu' in photo.attachment.video %}
+											{{ photo.attachment.video|replace(youtube) }}
+											{% set videoSource = 'youtube' %}
+										{% elseif 'vimeo.com' in photo.attachment.video %}
+											{{ photo.attachment.video|preg_replace(vimeoPattern, vimeoReplace) ~ '?api=1' }}
+											{% set videoSource = 'vimeo' %}
+										{% else %}
+											{{ photo.attachment.video|trim }}
+										{% endif %}
+									{% endset %}
+
+									{% set videoIcon = 'youtu' in photo.attachment.video ? 'icon-youtube' : 'icon-vimeo' %}
+
+									{% set iconStyle %}
+										margin-left:{{ settings.icons.margin|default(5) }};
+										margin-right:{{ settings.icons.margin|default(5) }};
+									{% endset %}
+
+									<a href="{{ videoUrl|trim }}"
+										data-id="gg-{{ gallery.id }}-{{ photo.id }}"
+										title="{{ aTitle|trim }}"
+										class="hi-icon gg-video {{ videoIcon }}
+											{% if settings.box.type == '2' %} pbox{% endif %}
+										"
+										style="{{ iconStyle|trim }}"
+										data-video-source="{{ videoSource }}"
+										{#{% if settings.box.type == '1' and link == false %}#}
+										{% if settings.box.type == '1' %}
+										data-rel="prettyPhoto[pp_gal]"
+										{% else %}
+										{# photobox plugin requirment #}
+										rel="video"
+										{#  #}
+										{% endif %}
+									>
+										{#Watch the video {{ photo.attachment.caption }}#}
+									</a>
+								{% endif %}
+
+								{% if photo.attachment.external_link is defined and photo.attachment.external_link is not empty %}
+									<a title="{{ aTitle|trim }}" data-id="gg-{{ gallery.id }}-{{ photo.id }}" href="{{ photo.attachment.external_link }}" target="{{ photo.attachment.target|default('_self') }}" class="hi-icon icon-link" style="{{ iconStyle|trim }}"></a>
+								{% endif %}
+
+								{% if videoUrl is not defined and (photo.attachment.external_link is not defined or photo.attachment.external_link is empty) %}
+									<a title="{{ aTitle|trim }}" data-id="gg-{{ gallery.id }}-{{ photo.id }}" href="{{ photo.attachment.url }}" class="hi-icon icon-fullscreen gg-colorbox{% if settings.box.type == '2' and link is not defined %} pbox{% endif %}" style="{{ iconStyle|trim }}"
+									{% if settings.box.type == '1' and link == false %}
+										data-rel="prettyPhoto[pp_gal]"
+									{% endif %}>Open in pop-up window</a>
+								{% endif %}
+							</div>
+						{% endif %}
+
+						{% if settings.icons is not defined or settings.icons.enabled == 'false' %}
+							{% if settings.thumbnail.overlay.enabled == 'true' %}
+								{% if photo.attachment.caption is not empty %}
+									<div class="gg-image-caption fitvidsignore" style="font-size:{{ settings.thumbnail.overlay.text_size }}{{ settings.thumbnail.overlay.text_size_unit|replace(['px', '%', 'em']) }};">
+										<object type="none/none">
+											{{ photo.attachment.caption }}
+										</object>
+									</div>
+								{% endif %}
+							{% endif %}
+						{% endif %}
+					{% endblock %}
+				</div>
+			</FIGCAPTION>
+
+			{% block figcaption_after %}
+				{% if settings.icons is defined and settings.icons.enabled == 'true' and settings.thumbnail.overlay.enabled == 'true' %}
+
+					{% set captionStyle %}
+						color:{{ settings.thumbnail.overlay.foreground }};
+						background-color:{{ settings.thumbnail.overlay.background }};
+						font-size:{{ settings.thumbnail.overlay.text_size }}{{ settings.thumbnail.overlay.text_size_unit|replace(['px', '%', 'em']) }};
+						font-family:{{ settings.thumbnail.overlay.font_family }};
+						{% if settings.thumbnail.overlay.text_align != 3 %}
+							text-align:{{ settings.thumbnail.overlay.text_align|replace(['left', 'right', 'center']) }};
+						{% endif %}
+						{% if settings.thumbnail.overlay.effect == 'none' or settings.thumbnail.overlay.enabled == 'false' %}
+							opacity:1;
+							bottom:0;
+						{% endif %}
+						vertical-align:{{ settings.thumbnail.overlay.position }};
+					{% endset %}
+
+					{% if photo.attachment.caption is not empty or settings.thumbnail.tooltip == 'false' %}
+					<div
+						class="caption-with-{% if 'icons' in settings.thumbnail.overlay.effect %}{{ settings.thumbnail.overlay.effect }}{% else %}icons{% endif %}"
+						style="{{ captionStyle }}"
+						data-alpha="{{ settings.thumbnail.overlay.transparency|trim }}">
+						<div style="display: table; height:100%; width:100%;">
+							{% if photo.attachment.caption is not empty %}
+								<span style="padding: 10px;display:table-cell;font-size:{{ settings.thumbnail.overlay.text_size }}{{ settings.thumbnail.overlay.text_size_unit|replace(['px', '%', 'em']) }}; font-weight: 800;
+								vertical-align:{{ settings.thumbnail.overlay.position }};">
+									{{ photo.attachment.caption|raw }}
+								</span>
+							{% else %}
+								<span style="padding: 10px;display:table-cell;font-size:{{ settings.thumbnail.overlay.text_size }}{{ settings.thumbnail.overlay.text_size_unit|replace(['px', '%', 'em']) }};
+								vertical-align:{{ settings.thumbnail.overlay.position }};">
+									{{ photo.attachment.title }}
+								</span>
+							{% endif %}
+						</div>
+					</div>
+					{% endif %}
+				{% endif %}
+			{% endblock %}
+		</FIGURE>
+
+	{% block figure_after %}
+		{% if settings.icons is not defined or settings.icons.enabled == 'false' %}
+			</a>
+		{% endif %}
+	{% endblock %}
+{% endspaceless %}

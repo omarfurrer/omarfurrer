@@ -1,0 +1,76 @@
+{% macro show(areaWidth, galleryId) %}
+    <div class="media-wrapr {% if galleryId is empty %}no-gallery-id{% endif %}" style="width: {{ areaWidth }}px;margin: 0 auto !important;display: block;">
+        <h1>{{ translate('Choose source') }}</h1>
+        <button class="button button-primary button-hero gallery" id="gg-btn-upload" data-folder-id="0"
+                style="width: 400px;"
+                data-gallery-id="{{ galleryId }}" data-upload>
+            <i class="fa fa-wordpress fa-2x"></i>
+            {{ translate('Import from WordPress Media Library') }}
+        </button>
+        <h3>{{ translate('Import from social networks') }}</h3>
+        <a class="button button-primary button-hero" href="{{ environment.generateUrl('insta', 'index', {'id': galleryId}) }}" style="width: 400px;margin-bottom: 20px;">
+            <i class="fa fa-instagram fa-2x"></i>
+            {{ translate('Import from your Instagram account') }}
+        </a>
+        {% if environment.isPro() == true %}
+            <a class="button button-primary button-hero" href="{{ environment.generateUrl('flickr', 'index', {'id': galleryId}) }}" style="width: 400px;margin-bottom: 20px;">
+                <i class="fa fa-flickr fa-2x"></i>
+                {{ translate('Import from your Flickr account') }}
+            </a>
+            <a class="button button-primary button-hero" href="{{ environment.generateUrl('tumblr', 'index', {'id': galleryId}) }}" style="width: 400px;margin-bottom: 20px;">
+                <i class="fa fa-tumblr fa-2x"></i>
+                {{ translate('Import from your Tumblr account') }}
+            </a>
+            <a class="button button-primary button-hero" href="{{ environment.generateUrl('facebook', 'index', {'id': galleryId}) }}" style="width: 400px;margin-bottom: 20px;">
+                <i class="fa fa-facebook fa-2x"></i>
+                {{ translate('Import from your Facebook account') }}
+            </a>
+
+            <h3 style="margin-top: 0px">{{ translate('Import from cloud services') }}</h3>
+            <a class="button button-primary button-hero" href="{{ environment.generateUrl('ftp', 'index', {'id': galleryId}) }}" style="width: 400px;margin-bottom: 20px;">
+                <i class="fa fa-file-image-o fa-2x"></i>
+                {{ translate('Import from your FTP server') }}
+            </a>
+            <a class="button button-primary button-hero" href="{{ environment.generateUrl('googledrive', 'index', {'id': galleryId}) }}" style="width: 400px;margin-bottom: 20px;">
+                <i class="fa fa-google fa-2x"></i>
+                {{ translate('Import from your Google Drive account') }}
+            </a>
+        {% else %}
+            <h3>{{ translate('Get Pro to enable import') }}</h3>
+            <a class="button button-primary button-hero" href="http://supsystic.com/plugins/photo-gallery/" style="width: 400px;margin-bottom: 20px;">
+                <i class="fa fa-unlock fa-2x"></i>
+                {{ translate('Get PRO') }}
+            </a>
+            <button class="button button-primary button-hero gallery" data-folder-id="0"
+                    style="width: 400px;margin-bottom: 20px;"
+                    data-gallery-id="{{ gallery.id }}" data-upload disabled>
+                <i class="fa fa-flickr fa-2x"></i>
+                {{ translate('Import from your Flickr account') }}
+            </button>
+            <button class="button button-primary button-hero gallery" data-folder-id="0"
+                    style="width: 400px;margin-bottom: 20px;"
+                    data-gallery-id="{{ gallery.id }}" data-upload disabled>
+                <i class="fa fa-tumblr fa-2x"></i>
+                {{ translate('Import from your Tumblr account') }}
+            </button>
+            <button class="button button-primary button-hero gallery" data-folder-id="0"
+                    style="width: 400px;margin-bottom: 20px;"
+                    data-gallery-id="{{ gallery.id }}" data-upload disabled>
+                <i class="fa fa-facebook fa-2x"></i>
+                {{ translate('Import from your Facebook account') }}
+            </button>
+            <button class="button button-primary button-hero gallery" data-folder-id="0"
+                    style="width: 400px;margin-bottom: 20px;"
+                    data-gallery-id="{{ gallery.id }}" data-upload disabled>
+                <i class="fa fa-file-image-o fa-2x"></i>
+                {{ translate('Import from your FTP server') }}
+            </button>
+            <button class="button button-primary button-hero gallery" data-folder-id="0"
+                    style="width: 400px;margin-bottom: 20px;"
+                    data-gallery-id="{{ gallery.id }}" data-upload disabled>
+                <i class="fa fa-google fa-2x"></i>
+                {{ translate('Import from your Google Drive account') }}
+            </button>
+        {% endif %}
+    </div>
+{% endmacro %}

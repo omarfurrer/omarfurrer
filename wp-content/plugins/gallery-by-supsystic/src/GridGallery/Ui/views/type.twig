@@ -1,0 +1,348 @@
+{% macro list_view(entities, sliderSettings, galleryId) %}
+    {% import _self as view %}
+    {% set head %}
+    <tr class="ui-jqgrid-labels-custom" role="rowheader">
+        <th scope="col" id="check-all" class="ui-state-default ui-th-column ui-th-ltr jqgh_ui-jqgrid-htable_id">
+            <input type="checkbox" id="checkAll" class="gg-checkbox">
+        </th>
+        <th scope="col" id="icon" class="ui-state-default ui-th-column ui-th-ltr jqgh_ui-jqgrid-htable_id">
+            {{ translate('Image') }}
+        </th>
+        <th scope="col" id="title" class="ui-state-default ui-th-column ui-th-ltr jqgh_ui-jqgrid-htable_id">
+            {{ translate('Properties') }}
+        </th>
+        <th scope="col" id="date" class="ui-state-default ui-th-column ui-th-ltr jqgh_ui-jqgrid-htable_id">
+            {{ translate('Date') }}
+        </th>
+    </tr>
+    {% endset %}
+
+    <table id="ui-jqgrid-htable-img" class="ui-jqgrid-htable" style="margin: 7px 0 7px -5px; width: 100%;">
+        <thead class="jqgrid-head-nav">
+        {{ head }}
+        </thead>
+        <tfoot>
+        {{ head }}
+        </tfoot>
+        <tbody id="the-list" data-sortable data-container="list">
+        {% for folder in entities.folders %}
+            {{ view.list_folder(folder) }}
+        {% endfor %}
+        {% for image in entities.images %}
+            {{ view.list_image(image, sliderSettings, galleryId) }}
+        {% else %}
+            {# No images. #}
+        {% endfor %}
+        </tbody>
+    </table>
+{% endmacro %}
+
+{% macro block_view(entities) %}
+    {% import _self as view %}
+    <ul class="sg-photos" data-sortable data-container="block">
+        {% for folder in entities.folders %}
+            {{ view.block_folder(folder) }}
+        {% endfor %}
+
+        {% for image in entities.images %}
+            {{ view.block_image(image) }}
+        {% endfor %}
+    </ul>
+{% endmacro %}
+
+{% macro block_folder(folder) %}
+    <li data-droppable class="gg-list-item" data-entity data-entity-id="{{ folder.id }}" data-entity-type="folder"
+        data-entity-info="{{ folder|json_encode }}">
+        <div class="gg-item" style="z-index: 0;">
+            <div class="gg-check">
+                <input type="checkbox" class="gg-checkbox" data-observable>
+            </div>
+            <a href="{{ environment.generateUrl('photos', 'view', { 'folder_id': folder.id, 'view': 'block' }) }}">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAADIAQMAAAAwS4omAAAAA1BMVEXk5+pYcSvrAAAAG0lEQVRIie3BMQEAAADCoPVPbQwfoAAAAIC3AQ+gAAEq5xQCAAAAAElFTkSuQmCC"
+                     alt="" width="150" height="150"/>
+
+                <div style="position: absolute; top: 55px; left: 55px; color: #bdc3c7;">
+                    <i class="fa fa-folder-open-o" style="font-size: 5em;"></i>
+                </div>
+
+                <div class="gg-folder-photos">
+                    <i class="fa fa-picture-o"></i> <span class="gg-folder-photos-num">{{ folder.photos|length }}</span>
+                </div>
+            </a>
+
+            <p>
+                <span class="folder-title">{{ folder.title|title }}</span>
+                <small>
+                    {{ folder.date }}
+                </small>
+            </p>
+        </div>
+    </li>
+{% endmacro %}
+
+{% macro block_image(image) %}
+    <li class="gg-list-item" data-entity data-entity-id="{{ image.id }}" data-entity-type="photo"
+        data-entity-info="{{ image|json_encode }}">
+        <div class="gg-item" style="z-index: 10;">
+            <div class="gg-check">
+                <input type="checkbox" class="gg-checkbox" data-observable>
+            </div>
+            <a data-colorbox href="{{ image.attachment.sizes.full.url }}">
+                {% if image.attachment.sizes.thumbnail is empty %}
+                    {% set src = image.attachment.sizes.full.url %}
+                    {% if image.attachment.orientation == 'landscape' %}
+                        {% set sizes = { 'width': 80, 'height': 60 } %}
+                    {% else %}
+                        {% set sizes = { 'width': 60, 'height': 80 } %}
+                    {% endif %}
+                {% else %}
+                    {% set src = image.attachment.sizes.thumbnail.url %}
+                    {% set sizes = { 'width': 60, 'height': 60 } %}
+                {% endif %}
+                <img class="supsystic-lazy" data-original="{{ src }}" alt="{{ image.attachment.title }}" width="150"
+                     style="min-height:150px;max-height:150px;"/>
+            </a>
+
+            <p title="{{ image.attachment.title }}">
+                {{ image.attachment.title }}
+                <small>
+                    {{ image.attachment.dateFormatted }}
+                </small>
+            </p>
+        </div>
+    </li>
+{% endmacro %}
+
+{% macro list_folder(folder) %}
+    <tr data-droppable data-entity data-entity-id="{{ folder.id }}" data-entity-type="folder"
+        data-entity-info="{{ folder|json_encode }}">
+        <th scope="row" class="check-column">
+            <label class="screen-reader-text"
+                   for="cb-select-{{ folder.id }}">{{ translate('Select %s')|format(folder.title) }}</label>
+            <input type="checkbox" name="folder[]" id="cb-select-{{ folder.id }}" value="{{ folder.id }}"
+                   data-observable>
+        </th>
+        <td class="column-icon media-icon" style="position: relative;">
+            <a href="{{ environment.generateUrl('photos', 'view', { 'folder_id': folder.id, 'view': 'list' }) }}"
+               data-colorbox>
+                <img width="60" height="60"
+                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAADIAQMAAAAwS4omAAAAA1BMVEXk5+pYcSvrAAAAG0lEQVRIie3BMQEAAADCoPVPbQwfoAAAAIC3AQ+gAAEq5xQCAAAAAElFTkSuQmCC"
+                     class="attachment-80x60 supsystic-lazy" alt="{{ folder.title }}">
+            </a>
+
+            <div style="position: absolute; top: 20px; left: 31px; color: #bdc3c7; z-index: 100;">
+                <i class="fa fa-folder-open-o" style="font-size: 3em;"></i>
+            </div>
+        </td>
+        <td class="title column-title">
+            <strong>
+                <a href="{{ environment.generateUrl('photos', 'view', { 'folder_id': folder.id, 'view': 'list' }) }}">
+                    <span class="folder-title">{{ folder.title|title|raw }}</span>
+                </a>
+            </strong>
+
+            <p>
+                <span class="gg-folder-photos-num">
+                    {{ folder.photos|length }}
+                </span>
+                {% if folder.photos|length == 1 %}
+                    {{ translate('photo') }}
+                {% else %}
+                    {{ translate('photos') }}
+                {% endif %}
+            </p>
+        </td>
+        <td class="date column-date">{{ folder.date }}</td>
+    </tr>
+{% endmacro %}
+
+{% macro list_image(image, sliderSettings, galleryId) %}
+    {% set nonProMsg = 'Available in PRO' %}
+    <tr data-entity data-entity-id="{{ image.id }}" data-settings="{{ sliderSettings|json_encode }}" data-entity-type="photo" data-entity-info="{{ image|json_encode }}">
+        <th scope="row" class="check-column">
+            <label class="screen-reader-text"
+                   for="cb-select-{{ image.id }}">{{ translate('Select %s')|format(image.attachment.title) }}</label>
+            <input type="checkbox" name="image[]" id="cb-select-{{ image.id }}" value="{{ image.id }}" data-observable>
+        </th>
+        <td class="column-icon media-icon">
+            <a href="{{ image.attachment.sizes.full.url }}" data-colorbox>
+                {% if image.attachment.sizes.thumbnail is empty %}
+                    {% set src = image.attachment.sizes.full.url %}
+                    {% if image.attachment.orientation == 'landscape' %}
+                        {% set sizes = { 'width': 80, 'height': 60 } %}
+                    {% else %}
+                        {% set sizes = { 'width': 60, 'height': 80 } %}
+                    {% endif %}
+                {% else %}
+                    {% set src = image.attachment.sizes.thumbnail.url %}
+                    {% set sizes = { 'width': 60, 'height': 60 } %}
+                {% endif %}
+                <img width="75" height="75" data-original="{{ src }}"
+                     class="attachment-thumbnail supsystic-lazy" alt="{{ image.attachment.title }}">
+            </a>
+        </td>
+        <td class="title column-title">
+            <form id="photo-editor-{{ image.id }}" class="photo-editor attachment-{{ image.attachment.id }}">
+                <strong data-tabcontent=".tabcontent-{{ image.id }}">
+                    <a href="#photo-caption-{{ image.id }}" class="add-new-h2 button active">
+                        {{ translate('Caption') }}
+                    </a>
+                    <a href="#photo-captionEffect-{{ image.id }}" class="add-new-h2 button">
+                        {{ translate('Caption effect') }}
+                    </a>
+                    <a href="#photo-seo-{{ image.id }}" class="add-new-h2 button">
+                        {{ translate('SEO') }}
+                    </a>
+                    <a href="#photo-link-{{ image.id }}" class="add-new-h2 button">
+                        {{ translate('Link') }}
+                    </a>
+                    <a href="#photo-video-{{ image.id }}" class="add-new-h2 button">
+                        {{ translate('Video') }}
+                    </a>
+                    <a href="#photo-tags-{{ image.id }}" class="add-new-h2 button">
+                        {{ translate('Categories') }}
+                    </a>
+                    <a href="#photo-linked-images-{{ image.id }}" class="add-new-h2 button">
+                        {{ translate('Linked images') }}
+                    </a>
+                    <a href="#photo-crop-{{ image.id }}" class="add-new-h2 button">
+                        {{ translate('Crop') }}
+                    </a>
+                    <a data-image-id="{{ image.id }}" data-attachment-id="{{ image.attachment.id }}"
+                       class="add-new-h2 button replace-image">
+                        {{ translate('Replace image') }}
+                    </a>
+                </strong>
+
+                <p id="photo-caption-{{ image.id }}" class="tabcontent-{{ image.id }}">
+                    <input type="text" name="caption" value="{{ image.attachment.caption|raw }}"
+                           placeholder="{{ translate('Caption') }}"/>
+                </p>
+
+                <p id="photo-captionEffect-{{ image.id }}" class="tabcontent-{{ image.id }}" style="display:none;">
+                    <button class="button selectCaptionEffectBtn" data-id="{{ image.attachment.id }}" title="{{ translate('Choose effect') }}">{{ translate('Choose effect') }}</button>
+                    <input type="text" class="captionEffectVal" name="captionEffect" data-id="{{ image.attachment.id }}" value="{{ image.attachment.captionEffect|default(sliderSettings.thumbnail.overlay.effect) }}" style="display: none;" />
+                </p>
+
+                <p id="photo-seo-{{ image.id }}" class="tabcontent-{{ image.id }}" style="display: none">
+                    <input type="text" name="description" value="{{ image.attachment.description|raw }}"
+                           style="width: 40%;"
+                           placeholder="{{ translate('Description') }}"/>
+                    <input type="text" name="alt" value="{% if image.attachment.alt is not empty %}{% if image.attachment.alt == " " %}{{ ""}}{% else %}{{ image.attachment.alt }}{% endif %}{% else %}{{ image.attachment.title }}{% endif %}"
+                           style="width: 40%;"
+                           placeholder="{{ translate('Alternative text') }}"/>
+                </p>
+
+                <p id="photo-link-{{ image.id }}" class="tabcontent-{{ image.id }}" style="display: none">
+                    <input
+                            type="text"
+                            name="link"
+                            value="{{ image.attachment.external_link }}"
+                            style="width: 50%;"
+                            placeholder="{{ translate('http://example.com/') }}"
+                            />
+                    <label style="border: 1px solid #9D9D9D;padding: 5px;">
+                        <input
+                                type="checkbox"
+                                name="target"
+                                value="_blank"
+                                {% if image.attachment.target == '_blank' %}
+                                    checked="checked"
+                                {% endif %}
+                                />
+                        {{ translate('Open in new window') }}
+                    </label>
+                    <label style="border: 1px solid #9D9D9D;padding: 5px; margin-left: 5px;">
+                        <input
+                                type="checkbox"
+                                name="rel"
+                                value="nofollow"
+                                {% if image.attachment.rel == 'nofollow' %}
+                                    checked="checked"
+                                {% endif %}
+                                />
+                        {{ translate('Add nofollow attribute') }}
+                    </label>
+                </p>
+
+                <p id="photo-video-{{ image.id }}" class="tabcontent-{{ image.id }}" style="display: none; width: 350px;">
+                    <input
+                            type="text"
+                            {% if environment.isPro() %}
+                                name="video"
+                                value="{{ image.attachment.video }}"
+                            {% else %}
+                                disabled="disabled"
+                                style="width: 200px;"
+                            {% endif %}
+                            placeholder="{{ translate('Video URL') }}"
+                            >
+                    {% if environment.isPro() == false %}
+                        <span style="color:red" class="description">
+                            <a href="http://supsystic.com/plugins/photo-gallery?utm_source=plugin&utm_medium=video&utm_campaign=gallery" target="_blank">
+                                {{ nonProMsg|raw }}
+                            </a>
+                        </span>
+                    {% endif %}
+                </p>
+
+                <p id="photo-tags-{{ image.id }}" class="tabcontent-{{ image.id }}" style="display:none;">
+                    {% if environment.isPro() == false %}
+                        <input type="text" style="width: 60%; margin-left:4px;" disabled placeholder="Categories">
+                        <span style="color:red" class="description">
+                            <a href="http://supsystic.com/plugins/photo-gallery?utm_source=plugin&utm_medium=imagescategories&utm_campaign=gallery" target="_blank">
+                                {{ nonProMsg|raw }}
+                            </a>
+                        </span>
+                    {% else %}
+                        <input type="text" class="gg-tags" id="tags-{{ image.id }}" data-id="{{ image.id }}"
+                               value="{{ image.tags|join(',')|raw }}">
+                    {% endif %}
+                </p>
+
+                <p id="photo-linked-images-{{ image.id }}" class="tabcontent-{{ image.id }}" style="display:none;">
+                    {% if environment.isPro() == false %}
+                        <button class="button disabled" disabled>{{ translate('Choose images') }}</button>
+                        <span style="color:red" class="description">
+                            <a href="http://supsystic.com/plugins/photo-gallery?utm_source=plugin&utm_medium=linked_images&utm_campaign=gallery" target="_blank">
+                                {{ nonProMsg|raw }}
+                            </a>
+                        </span>
+                    {% else %}
+                        <button class="button selectLinkedImages" data-id="{{ image.id }}" title="{{ translate('Choose images') }}">{{ translate('Choose images') }}</button>
+                        <input type="text" name="linkedImages" data-id="{{ image.id }}" value="{{ image.attachment.linkedImages|default('') }}" style="display: none;" />
+                    {% endif %}
+                </p>
+
+                <p id="photo-crop-{{ image.id }}" class="tabcontent-{{ image.id }}" style="display:none; margin: 0;">
+                    <label style="margin-left: 5px;">Image crop position: </label>
+                    {% set cropPositionList = {
+                        "left-top":"Top Left", 
+                        "center-top":"Top Center",
+                        "right-top":"Top Right",
+                        "left-center":"Center Left",
+                        "center-center":"Center Center",
+                        "right-center":"Center Right",
+                        "left-bottom":"Bottom Left",
+                        "center-bottom":"Bottom Center",
+                        "right-bottom":"Bottom Right"
+                    } %}
+                    <select name="cropPosition">
+                        {% for value, title in cropPositionList %}
+                            <option value="{{ value }}" {% if image.attachment.cropPosition|default('center-center') == value %} selected="selected" {% endif %}>{{ title }}</option>
+                        {% endfor %}
+                    </select>
+                </p>
+
+                <input name="replace_attachment_id" id="replace_attachment_id_{{ image.id }}" type="hidden"/>
+                <input name="image_id" value="{{ image.id }}" type="hidden"/>
+                <input name="attachment_id" value="{{ image.attachment.id }}" type="hidden"/>
+                <input name="gallery_id" value="{{ galleryId }}" type="hidden"/>
+                <input name="action" value="grid-gallery" type="hidden"/>
+                <input name="route[module]" value="photos" type="hidden"/>
+                <input name="route[action]" value="updateAttachment" type="hidden"/>
+            </form>
+        </td>
+        <td class="date column-date" style="text-align: center;">{{ image.attachment.dateFormatted }}</td>
+    </tr>
+{% endmacro %}

@@ -1,0 +1,37 @@
+.ui-accordion-header {
+    margin: 0 !important;
+    font-size: inherit !important;
+    outline: none;
+    cursor: pointer !important;    
+}
+.wp-color-result:hover {
+    text-decoration: none !important;
+}
+.ui-state-highlight {
+	height: 30px;
+	background-color: #a99d9d;
+	width: 100%;
+    border: 1px dotted #ddd;
+    margin: 2px 0;
+}
+.ich-rich-editor-wrap h2 {
+    margin: 0 !important;
+    padding: 9px 15px 4px 0 !important;
+    line-height: 29px !important;
+    font-size: 30px !important;
+    font-weight: 500 !important;
+}
+.note-popover .popover-content .note-para .dropdown-menu, .panel-heading.note-toolbar .note-para .dropdown-menu {
+    min-width: 216px !important;
+    padding: 5px !important;
+}
+.wp-picker-holder {
+    position: absolute;
+    z-index: 999;
+}
+.note-editor.note-frame.fullscreen {
+    z-index: 99999999999999 !important;
+}
+.ich-settings-main-wrap .form-group {
+    margin-bottom: 5px !important;
+}

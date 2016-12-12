@@ -1,0 +1,928 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"X-Generator: Poedit 1.8.8\n"
+"Language: el\n"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:92
+#: image-caption-hover/includes/saved_options.php:119
+#: image-caption-hover/includes/saved_options.php:128
+#: image-caption-hover/includes/load_first.php:92
+#: image-caption-hover/includes/load_first.php:119
+#: image-caption-hover/includes/load_first.php:128
+msgid "(Pro Feature)"
+msgstr "(Pro Χαρακτηριστικό)"
+
+#. Text in echo
+#: image-caption-hover/cpt.class.php:146
+msgid "60+ More Hover Effects"
+msgstr "60+ Περισσότερα Hover Επιδράσεις"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:165
+#: image-caption-hover/cpt.class.php:1
+#: image-caption-hover/includes/load_first.php:166
+msgid "Add New"
+msgstr "Προσθεσε νεο"
+
+#. Text in echo
+#: image-caption-hover/cpt_inc/render_box_contents.php:25
+msgid "Add New Image"
+msgstr "Προσθέστε New Image"
+
+#. Text in echo
+#: image-caption-hover/widget.php:94
+msgid "Alt"
+msgstr "alt"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Alternate Text"
+msgstr "εναλλακτικό κείμενο"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:22
+#: image-caption-hover/includes/load_first.php:22
+msgid "Alternate Text (img tag alt attribute)"
+msgstr "Εναλλακτικό κείμενο (IMG tag χαρακτηριστικό alt)"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Animation Speed"
+msgstr "animation Speed"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:149
+#: image-caption-hover/includes/load_first.php:149
+msgid "Animation Speed (eg: 500ms or 1s)"
+msgstr "Animation Speed (π.χ.: 500ms ή 1s)"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Audio"
+msgstr "ήχου"
+
+#. Text in echo
+#: image-caption-hover/cpt.class.php:143
+msgid "Audio Sound Effects on Hover"
+msgstr "Audio Sound Επιδράσεις στην Hover"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:53
+#: image-caption-hover/cpt.class.php:155 image-caption-hover/widget.php:115
+#: image-caption-hover/includes/load_first.php:53
+msgid "Auto"
+msgstr "Αυτο"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Background Color"
+msgstr "Χρώμα του φόντου"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:68
+#: image-caption-hover/includes/load_first.php:68
+msgid "Background Opacity"
+msgstr "Ιστορικό Αδιαφάνεια"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:80
+#: image-caption-hover/includes/load_first.php:80
+msgid "Border"
+msgstr "Σύνορο"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:110
+#: image-caption-hover/cpt.class.php:155
+#: image-caption-hover/includes/load_first.php:110
+msgid "Border Color"
+msgstr "χρώμα περιγράμματος"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:119
+#: image-caption-hover/cpt.class.php:155
+#: image-caption-hover/includes/load_first.php:119
+msgid "Border Radius"
+msgstr "συνόρων Ακτίνα"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:92
+#: image-caption-hover/includes/load_first.php:92
+msgid "Border Style"
+msgstr "Στυλ σύνορα"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Border Type"
+msgstr "σύνορα Τύπος"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:83
+#: image-caption-hover/cpt.class.php:155
+#: image-caption-hover/includes/load_first.php:83
+msgid "Border Width"
+msgstr "συνόρων Πλάτος"
+
+#. Text in echo
+#: image-caption-hover/cpt.class.php:149
+msgid "Borders and Frames"
+msgstr "Περιγράμματα και Κορνίζες"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Bottom"
+msgstr "Κάτω μέρος"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:133
+#: image-caption-hover/includes/load_first.php:133
+msgid "Box Shadow for border. (h-shadow v-shadow blur spread color)"
+msgstr "Κιβώτιο σκιών για συνόρων. (H-σκιά v-σκιά χρώμα θαμπάδα spread)"
+
+#. Text in echo
+#: image-caption-hover/cpt_inc/render_box_contents.php:32
+msgid "Cancel"
+msgstr "Ματαίωση"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:45
+#: image-caption-hover/cpt.class.php:155 image-caption-hover/widget.php:103
+#: image-caption-hover/includes/load_first.php:45
+msgid "Caption"
+msgstr "Λεζάντα"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:50
+#: image-caption-hover/cpt.class.php:155
+#: image-caption-hover/includes/load_first.php:50
+msgid "Caption Alignment"
+msgstr "λεζάντα Ευθυγράμμιση"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:62
+#: image-caption-hover/includes/load_first.php:62
+msgid "Caption Background Color"
+msgstr "Λεζάντα Χρώμα φόντου"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:48
+#: image-caption-hover/includes/load_first.php:48
+msgid "Caption Text (HTML tags can be used)"
+msgstr "Λεζάντα Κείμενο (μπορεί να χρησιμοποιηθεί ετικέτες HTML)"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:64
+#: image-caption-hover/includes/load_first.php:64
+msgid "Caption Text Color"
+msgstr "Λεζάντα Χρώμα κειμένου"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Caption Wrapper"
+msgstr "λεζάντα Wrapper"
+
+#. Text in echo
+#: image-caption-hover/widget.php:113
+msgid "Caption alignment"
+msgstr "ευθυγράμμιση λεζάντας"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:54
+#: image-caption-hover/cpt.class.php:155 image-caption-hover/widget.php:116
+#: image-caption-hover/includes/load_first.php:54
+msgid "Center"
+msgstr "Κέντρο"
+
+#. Text in echo
+#: image-caption-hover/includes/settings.php:44
+#: image-caption-hover/plugin.class.php:164
+msgid "Changes Saved"
+msgstr "αλλαγές Αποθηκευμένες"
+
+#. Text in echo
+#: image-caption-hover/cpt_inc/settings_box.php:36
+msgid "Check to enable shortcodes in caption text box"
+msgstr "Ελέγξτε για να ενεργοποιήσετε ολιγοψήφιους στη λεζάντα πλαίσιο κειμένου"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Choose background color for caption"
+msgstr "Επιλέξτε το χρώμα φόντου για λεζάντα"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Choose border type (available in pro version)"
+msgstr "Επιλέξτε τον τύπο των συνόρων (διατίθεται σε έκδοση Pro)"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Choose caption overlay position (available in pro version)"
+msgstr "Επιλέξτε τη θέση επικάλυψης λεζάντα (διατίθεται σε έκδοση Pro)"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Choose color for border (available in pro version)"
+msgstr "Επιλέξτε το χρώμα των συνόρων (διαθέσιμο στην έκδοση Pro)"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Choose hover style"
+msgstr "Διαλέξτε το στυλ Hover"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Choose text color for caption"
+msgstr "Επιλέξτε το χρώμα κειμένου για λεζάντα"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Choose to open link in new tab or same"
+msgstr "Επιλέξτε για να ανοίξετε σύνδεσμο σε νέα καρτέλα ή ίδια"
+
+#. Text in echo
+#: image-caption-hover/cpt.class.php:145
+msgid "Custom Animation Speed"
+msgstr "Custom Animation Speed"
+
+#. Text in echo
+#: image-caption-hover/cpt_inc/settings_box.php:40
+msgid "Custom CSS"
+msgstr "έθιμο CSS"
+
+#. Text in echo
+#: image-caption-hover/cpt.class.php:148
+msgid "Custom Width and Height"
+msgstr "Προσαρμοσμένη Πλάτος και Ύψος"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:96
+#: image-caption-hover/cpt.class.php:155
+#: image-caption-hover/includes/load_first.php:96
+msgid "Dashed"
+msgstr "διακεκομμένη"
+
+#. Text in echo
+#: image-caption-hover/includes/settings.php:30
+msgid "Default"
+msgstr "Αθέτηση"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:163
+#: image-caption-hover/cpt_inc/settings.php:5
+#: image-caption-hover/includes/load_first.php:164
+msgid "Delete"
+msgstr "Διαγράφω"
+
+#. Text in echo
+#: image-caption-hover/cpt_inc/settings_box.php:8
+msgid "Display"
+msgstr "Απεικόνιση"
+
+#. Text in echo
+#: image-caption-hover/cpt.class.php:147
+msgid "Display Caption at Bottom or Top"
+msgstr "Εμφάνιση υποτίτλων στο κάτω μέρος ή Top"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:95
+#: image-caption-hover/cpt.class.php:155
+#: image-caption-hover/includes/load_first.php:95
+msgid "Dotted"
+msgstr "Διάσπαρτος"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:98
+#: image-caption-hover/cpt.class.php:155
+#: image-caption-hover/includes/load_first.php:98
+msgid "Double"
+msgstr "Διπλό"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:164
+#: image-caption-hover/includes/load_first.php:165
+msgid "Duplicate"
+msgstr "Αντίγραφο"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:1
+msgid "Edit"
+msgstr "Επεξεργασία"
+
+#. Text in echo
+#: image-caption-hover/cpt.class.php:459
+msgid "Editor"
+msgstr "Συντάκτης"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:33
+#: image-caption-hover/includes/load_first.php:33
+msgid "Eg: [ilightbox id=\"7\"], Leave blank if not sure"
+msgstr "Π.χ: [ilightbox id = \"7\"], Αφήστε το κενό αν δεν είστε σίγουροι"
+
+#. Text in echo
+#: image-caption-hover/cpt.class.php:509
+#: image-caption-hover/cpt_inc/settings_box.php:32
+msgid "Enable"
+msgstr "Καθιστώ ικανό"
+
+#. Text in echo
+#: image-caption-hover/includes/settings.php:31
+msgid "First Tap Hover, Second Tap Navigate"
+msgstr "Πρώτα Πατήστε Hover, Δεύτερη Πατήστε Πλοήγηση"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Full"
+msgstr "Γεμάτος"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Full body of the window"
+msgstr "Γεμάτο σώμα του παραθύρου"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:166
+#: image-caption-hover/grid_builder.php:44
+#: image-caption-hover/includes/load_first.php:167
+msgid "Get Shortcode"
+msgstr "Πάρτε Σύντομος"
+
+#. Text in echo
+#: image-caption-hover/grid_builder.php:2
+msgid "Grid Builder"
+msgstr "πλέγμα Builder"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:99
+#: image-caption-hover/cpt.class.php:155
+#: image-caption-hover/includes/load_first.php:99
+msgid "Groove"
+msgstr "Ράβδωση"
+
+#. Text in echo
+#: image-caption-hover/cpt.class.php:134
+msgid "Having trouble setting up?"
+msgstr "Αντιμετωπίζετε προβλήματα με τη ρύθμιση;"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Heading 1"
+msgstr "Τομέας 1"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Heading 2"
+msgstr "Τομέας 2"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Heading 3"
+msgstr "Τομέας 3"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Heading 4"
+msgstr "Τομέας 4"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Heading 5"
+msgstr "Τομέας 5"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Heading 6"
+msgstr "Τομέας 6"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Height"
+msgstr "Ύψος"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:41
+#: image-caption-hover/includes/load_first.php:41
+msgid "Height eg: 100px or 50%"
+msgstr "Ύψος πχ: 100px ή 50%"
+
+#. Text in echo
+#: image-caption-hover/includes/settings.php:36
+msgid "Here you can control touch behavior for links"
+msgstr "Εδώ μπορείτε να ελέγχετε τη συμπεριφορά αφής για τις συνδέσεις"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:137
+#: image-caption-hover/includes/load_first.php:137
+msgid "Hover"
+msgstr "Φτερουγίζω"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Hover Effect"
+msgstr "Hover Effect"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:140
+#: image-caption-hover/includes/load_first.php:140
+msgid "Hover Style"
+msgstr "Hover Style"
+
+#. Text in echo
+#: image-caption-hover/widget.php:174
+msgid "Hover style"
+msgstr "στυλ Hover"
+
+#. Text in echo
+#: image-caption-hover/widget.php:137
+msgid "Hover styles"
+msgstr "στυλ Hover"
+
+#. Text in echo
+#: image-caption-hover/plugin.class.php:141
+msgid "How to Use"
+msgstr "Πώς να χρησιμοποιήσετε"
+
+#. Text in echo
+#: image-caption-hover/cpt.class.php:135
+msgid "How to use"
+msgstr "Πώς να χρησιμοποιήσετε"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:3
+#: image-caption-hover/widget.php:71
+#: image-caption-hover/includes/load_first.php:3
+msgid "Image"
+msgstr "Εικόνα"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:1
+#: image-caption-hover/includes/load_first.php:1
+msgid "Image Caption Hover"
+msgstr "Εικόνα Λεζάντα Hover"
+
+#. Text in echo
+#: image-caption-hover/includes/settings.php:2
+#: image-caption-hover/plugin.class.php:140
+msgid "Image Caption Hover Settings"
+msgstr "Εικόνα Ρυθμίσεις Λεζάντα Hover"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Image URL"
+msgstr "URL εικόνας"
+
+#. Text in echo
+#: image-caption-hover/cpt_inc/settings_box.php:17
+msgid "Images in a row"
+msgstr "Εικόνες σε μια σειρά"
+
+#. Text in echo
+#: image-caption-hover/cpt_inc/render_box_contents.php:31
+#: image-caption-hover/grid_builder.php:36
+msgid "Insert"
+msgstr "Εισάγετε"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:101
+#: image-caption-hover/cpt.class.php:155
+#: image-caption-hover/includes/load_first.php:101
+msgid "Inset"
+msgstr "Ένθεση"
+
+#. Text in echo
+#: image-caption-hover/grid_builder.php:3
+msgid "It is used to display single images in a row"
+msgstr "Είναι χρησιμοποιείται για να εμφανίσει μόνο εικόνες σε μια σειρά"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "It will be used as alt attribute of image tag"
+msgstr "Θα χρησιμοποιηθεί ως alt χαρακτηριστικό της ετικέτας εικόνα"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "It will be used as title attribute of image tag. Square and Circle Effects will take it as heading"
+msgstr "Θα χρησιμοποιηθεί ως χαρακτηριστικό τίτλο ετικέτα εικόνας. Τετράγωνο και κύκλο Επιδράσεις θα το πάρετε ως επικεφαλίδα"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "It will open above link in popup on clicking (available in pro version)"
+msgstr "Θα ανοίξει παραπάνω σύνδεσμο στο αναδυόμενο παράθυρο για κλικ (διατίθεται σε έκδοση Pro)"
+
+#. Text in echo
+#: image-caption-hover/grid_builder.php:2
+msgid "It will work in Pro Version"
+msgstr "Θα λειτουργήσει στο Pro Έκδοση"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:57
+#: image-caption-hover/cpt.class.php:155 image-caption-hover/widget.php:119
+#: image-caption-hover/includes/load_first.php:57
+msgid "Justify"
+msgstr "Δικαιολογώ"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:38
+#: image-caption-hover/includes/load_first.php:38
+msgid "Leaving blank will take container\\'s width"
+msgstr "Αφήνοντας κενά θα λάβουν το πλάτος του δοχείου \\ 's"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:56
+#: image-caption-hover/cpt.class.php:155 image-caption-hover/widget.php:118
+#: image-caption-hover/includes/load_first.php:56
+msgid "Left"
+msgstr "Αριστερά"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "LightBox"
+msgstr "LightBox"
+
+#. Text in echo
+#: image-caption-hover/includes/load_first.php:74
+msgid "Link (Paste URL here or leave blank)"
+msgstr "Σύνδεσμος (Επικόλληση URL εδώ ή αφήστε κενό)"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:74
+msgid "Link (paste URL here or leave blank)"
+msgstr "Σύνδεσμος (πάστα URL εδώ ή αφήστε κενό)"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Link Target"
+msgstr "προορισμού σύνδεσης"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:76
+#: image-caption-hover/includes/load_first.php:76
+msgid "Link Target (write _blank for opening link in new window)"
+msgstr "Προορισμού σύνδεσης (write _blank για σύνδεση άνοιγμα σε νέο παράθυρο)"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Link To"
+msgstr "Συνδέω με"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:11
+#: image-caption-hover/cpt.class.php:433 image-caption-hover/widget.php:79
+#: image-caption-hover/includes/load_first.php:11
+msgid "Media"
+msgstr "Μεσα ΜΑΖΙΚΗΣ ενημέρωσης"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:115
+#: image-caption-hover/includes/load_first.php:115
+msgid "Name of color or color code."
+msgstr "Ονομάστε το χρώμα ή χρωματικό κώδικα."
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:1
+msgid "New"
+msgstr "Νέος"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "New Window"
+msgstr "Νέο παράθυρο"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:1
+msgid "No Image Caption Hover found"
+msgstr "Δεν υπάρχει εικόνα Λεζάντα Hover βρέθηκαν"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:1
+msgid "No Image Caption Hover found in Trash"
+msgstr "Δεν υπάρχει εικόνα Λεζάντα Hover βρίσκονται στο Trash"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "None"
+msgstr "Κανένας"
+
+#. Text in echo
+#: image-caption-hover/grid_builder.php:21
+msgid "Number of Columns in Row"
+msgstr "Αριθμός στηλών σε σειρά"
+
+#. Text in echo
+#: image-caption-hover/cpt.class.php:136
+msgid "OR"
+msgstr "Ή"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:102
+#: image-caption-hover/cpt.class.php:155
+#: image-caption-hover/includes/load_first.php:102
+msgid "Outset"
+msgstr "Αρχή"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Overlay Position"
+msgstr "Επικάλυψη Θέση"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Parent frameset"
+msgstr "μητρική πλαισίων"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:1
+msgid "Parent:"
+msgstr "Μητρική εταιρεία:"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:6
+#: image-caption-hover/widget.php:72
+#: image-caption-hover/includes/load_first.php:6
+msgid "Paste URL or use from Media"
+msgstr "Επικόλληση URL ή τη χρήση από το Media"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:157
+#: image-caption-hover/includes/load_first.php:157
+msgid "Preview"
+msgstr "Προεπισκόπηση"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:150
+#: image-caption-hover/includes/load_first.php:150
+msgid "Pro Feature"
+msgstr "Pro Χαρακτηριστικό"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Provide URL here or leave blank to disable link"
+msgstr "Παρέχουν τη διεύθυνση URL εδώ ή αφήστε το κενό για να απενεργοποιήσετε σύνδεσμο"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Provide animation speed Eg: 500ms or 1s (available in pro version)"
+msgstr "Παρέχει ταχύτητα animation Π.χ: 500ms ή 1s (διαθέσιμο στην έκδοση Pro)"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Provide border width Eg: 5px, leave blank to disable border (available in pro version)"
+msgstr "Παρέχουν στα σύνορα πλάτος Π.χ: 5px, αφήστε το κενό για να απενεργοποιήσετε σύνορα (διαθέσιμο στην έκδοση Pro)"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Provide caption text here, you can also use rich editor to insert caption. It should be plain text if you are using circle or square effects"
+msgstr "Παρέχετε κείμενο λεζάντα εδώ, μπορείτε επίσης να χρησιμοποιήσετε πλούσιο πρόγραμμα επεξεργασίας για να εισάγετε λεζάντα. Θα πρέπει να είναι απλό κείμενο, αν χρησιμοποιείτε κύκλο ή τετράγωνο αποτελέσματα"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Provide height for image Eg: 150px or 50%. Leave blank for responsive (available in pro version)"
+msgstr "Παρέχετε ύψος για την εικόνα Π.χ: 150px ή 50%. Αφήστε κενό για να ανταποκρίνεται (διαθέσιμο στην έκδοση Pro)"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Provide image url, you can also use media library to insert url"
+msgstr "Παρέχουν url εικόνα, μπορείτε επίσης να χρησιμοποιήσετε τη βιβλιοθήκη πολυμέσων για να εισάγετε url"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Provide mp3 music to play on hover (available in pro version)"
+msgstr "Παρέχουν mp3 μουσική να παίζει σε αιώρηση (διατίθεται σε έκδοση Pro)"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Provide radius for border eg: 5px or 50% (available in pro version)"
+msgstr "Παρέχουν ακτίνα για συνοριακούς π.χ.: 5px ή 50% (διατίθεται σε έκδοση Pro)"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Provide width for image Eg: 150px or 50%. Leave blank for responsive (available in pro version)"
+msgstr "Παρέχετε πλάτος για την εικόνα Π.χ: 150px ή 50%. Αφήστε κενό για να ανταποκρίνεται (διαθέσιμο στην έκδοση Pro)"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:124
+#: image-caption-hover/includes/load_first.php:124
+msgid "Radius of border eg: 5px or 50%."
+msgstr "Ακτίνα σύνορα π.χ.: 5px ή 50%."
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:158
+#: image-caption-hover/includes/load_first.php:158
+msgid "Refresh Preview"
+msgstr "Ανανέωση προεπισκόπησης"
+
+#. Text in echo
+#: image-caption-hover/cpt.class.php:144
+msgid "Responsive PopUp"
+msgstr "Responsive PopUp"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:100
+#: image-caption-hover/cpt.class.php:155
+#: image-caption-hover/includes/load_first.php:100
+msgid "Ridge"
+msgstr "Κορυφογραμμή"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:55
+#: image-caption-hover/cpt.class.php:155 image-caption-hover/widget.php:117
+#: image-caption-hover/includes/load_first.php:55
+msgid "Right"
+msgstr "Δικαίωμα"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Same Window"
+msgstr "ίδιο παράθυρο"
+
+#. Text in echo
+#: image-caption-hover/plugin.class.php:162
+msgid "Save Changes"
+msgstr "ίδιο παράθυρο"
+
+#. Text in echo
+#: image-caption-hover/includes/settings.php:42
+msgid "Save Settings"
+msgstr "Αποθήκευση ρυθμίσεων"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:1
+msgid "Search"
+msgstr "Έρευνα"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:11
+#: image-caption-hover/includes/load_first.php:11
+msgid "Select"
+msgstr "Επιλέγω"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:10
+#: image-caption-hover/includes/load_first.php:10
+msgid "Select Image"
+msgstr "Επιλογή εικόνας"
+
+#. Text in echo
+#: image-caption-hover/includes/settings.php:21
+msgid "Select the Role who can manage Image Caption Hover options."
+msgstr "Επιλέξτε το ρόλο που μπορούν να διαχειριστούν τις επιλογές Hover Λεζάντα εικόνας."
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:128
+#: image-caption-hover/cpt.class.php:155
+#: image-caption-hover/includes/load_first.php:128
+msgid "Shadow"
+msgstr "Σκιά"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Shadow for images (available in pro version)"
+msgstr "Σκιά για τις εικόνες (διαθέσιμο στην έκδοση Pro)"
+
+#. Text in echo
+#: image-caption-hover/cpt_inc/settings_box.php:28
+msgid "Shortcodes in Caption"
+msgstr "Ολιγοψήφιους στη λεζάντα"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:97
+#: image-caption-hover/cpt.class.php:155
+#: image-caption-hover/includes/load_first.php:97
+msgid "Solid"
+msgstr "Στερεός"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:106
+#: image-caption-hover/includes/load_first.php:106
+msgid "Some styles may depend on border color."
+msgstr "Μερικές μορφές μπορεί να εξαρτάται από το χρώμα των συνόρων."
+
+#. Text in echo
+#: image-caption-hover/cpt_inc/settings_box.php:24
+msgid "Space between each column"
+msgstr "Χώρο ανάμεσα σε κάθε στήλη"
+
+#. Text in echo
+#: image-caption-hover/cpt_inc/settings_box.php:21
+msgid "Space between images"
+msgstr "Διάστημα μεταξύ των εικόνων"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Text Color"
+msgstr "χρώμα κειμένου"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155 image-caption-hover/widget.php:85
+msgid "Title"
+msgstr "Τίτλος"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:70
+#: image-caption-hover/includes/load_first.php:70
+msgid "Title (for your reference)"
+msgstr "Τίτλος (για την αναφορά σας)"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:18
+#: image-caption-hover/includes/load_first.php:18
+msgid "Title (img tag title attribute)"
+msgstr "Τίτλος (χαρακτηριστικό τίτλο img tag)"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Top"
+msgstr "Κορυφή"
+
+#. Text in echo
+#: image-caption-hover/includes/settings.php:27
+msgid "Touch Devices Behavior for Links"
+msgstr "Αγγίξτε Συσκευές Συμπεριφορά για Σύνδεσμοι"
+
+#. Text in echo
+#: image-caption-hover/cpt.class.php:153
+#: image-caption-hover/plugin.class.php:140
+msgid "Unlock Pro Features"
+msgstr "Ξεκλειδώστε Pro Χαρακτηριστικά"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:14
+#: image-caption-hover/includes/load_first.php:14
+msgid "Use media to upload image"
+msgstr "Χρησιμοποιήστε τα μέσα ενημέρωσης για να ανεβάσετε την εικόνα"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:1
+msgid "View"
+msgstr "Θέα"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:1
+msgid "View All"
+msgstr "Δείτε όλα τα"
+
+#. Text in echo
+#: image-caption-hover/includes/settings.php:11
+msgid "Who Can Edit?"
+msgstr "Που μπορούν να επεξεργαστούν;"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Width"
+msgstr "Πλάτος"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:37
+#: image-caption-hover/includes/load_first.php:37
+msgid "Width eg: 100px or 50%"
+msgstr "Πλάτος π.χ.: 100px ή 50%"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:88
+#: image-caption-hover/includes/load_first.php:88
+msgid "Width of border, eg: 15px. Leaving blank will disable border."
+msgstr "Πλάτος των συνόρων, π.χ.: 15px. Αφήνοντας κενό θα απενεργοποιήσει σύνορα."
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Wrap caption in markup. Please select auto if you are using editor"
+msgstr "Τυλίξτε λεζάντα στη σήμανση. Παρακαλώ επιλέξτε auto αν χρησιμοποιείτε επεξεργαστή"
+
+#. Text in function
+#: image-caption-hover/cpt.class.php:155
+msgid "Wrap caption in markup. Please select none if you are using editor"
+msgstr "Τυλίξτε λεζάντα στη σήμανση. Επιλέξτε None αν χρησιμοποιείτε επεξεργαστή"
+
+#. Text in echo
+#: image-caption-hover/widget.php:105
+msgid "You can also use HTML tags here"
+msgstr "Μπορείτε επίσης να χρησιμοποιήσετε HTML ετικέτες εδώ"
+
+#. Text in echo
+#: image-caption-hover/cpt_inc/settings_box.php:47
+msgid "You can define your own styles here"
+msgstr "Μπορείτε να ορίσετε τη δική σας στυλ εδώ"
+
+#. Text in echo
+#: image-caption-hover/cpt.class.php:150
+msgid "Your existing Images and Captions will remain saved"
+msgstr "υπάρχουσες εικόνες και λεζάντες σας θα παραμείνει αποθηκευμένο"
+
+#. Text in echo
+#: image-caption-hover/cpt.class.php:137
+msgid "contact us for help"
+msgstr "επικοινωνήστε μαζί μας για βοήθεια"
+
+#. Text in echo
+#: image-caption-hover/includes/saved_options.php:28
+#: image-caption-hover/includes/load_first.php:28
+msgid "iLightBox Shortcode"
+msgstr "iLightBox Σύντομος"

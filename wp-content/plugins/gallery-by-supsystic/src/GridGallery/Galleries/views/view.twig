@@ -1,0 +1,372 @@
+{% extends 'grid-gallery.twig' %}
+
+{% block header %}
+    <nav id="supsystic-breadcrumbs" class="supsystic-breadcrumbs">
+        <a href="{{ environment.generateUrl('galleries') }}">{{ translate('Gallery by Supsystic') }}</a>
+        <i class="fa fa-angle-right"></i>
+        <a href="{{ environment.generateUrl('galleries') }}">{{ translate('Galleries') }}</a>
+        <i class="fa fa-angle-right"></i>
+        <a href="{{ environment.generateUrl('galleries', 'view', { 'gallery_id': gallery.id }) }}">{{ gallery.title }}</a>
+    </nav>
+
+    <section class="supsystic-bar" id="single-gallery-toolbar">
+        <ul class="supsystic-bar-controls">
+            {# Uncomment to enable images uploading from Images tab #}
+            {#<li>
+                <a href="{{ environment.generateUrl('galleries', 'addImages', { 'gallery_id': gallery.id }) }}"
+                   class="button button-primary">
+                    <i class="fa fa-fw fa-upload"></i> {{ environment.translate('Add images') }}
+                </a>
+            </li>
+
+            <li title="{{ environment.translate('Upload new images') }}">
+                <button class="button button-primary gallery" id="gg-btn-upload" data-folder-id="0" data-gallery-id="{{ gallery.id }}" data-upload>
+                    <i class="fa fa-fw fa-upload"></i>
+                    {{ environment.translate('Add images') }}
+                </button>
+            </li>#}
+
+            <li title="{{ translate('Upload new images') }}">
+                <button class="button button-primary gallery import-to-gallery">
+                    <i class="fa fa-fw fa-upload"></i>
+                    {{ translate('Add Images') }}
+                </button>
+            </li>
+
+            <li>
+                <a href="{{ environment.generateUrl('galleries', 'settings', { 'gallery_id': gallery.id }) }}"
+                   class="button">
+                    <i class="fa fa-fw fa-cogs"></i>
+                    {{ translate('Properties') }}
+                </a>
+            </li>
+
+            <li>
+                <a target="_blank"
+                   href="{{ environment.generateUrl('galleries', 'preview', { 'gallery_id': gallery.id }) }}"
+                   class="button" data-button="preview">
+                    <i class="fa fa-fw fa-eye"></i>
+                    {{ translate('Preview') }}
+                </a>
+            </li>
+
+            <li class="separator">|</li>
+
+            {#<li>
+                <button class="button" data-button="checkAll">
+                    <i class="fa fa-fw fa-check"></i> Check All
+                </button>
+            </li>#}
+
+            <li>
+                <button class="button" data-button="remove" disabled>
+                    <i class="fa fa-fw fa-trash-o"></i>
+                    {{ translate('Delete Image') }}
+                </button>
+            </li>
+
+            <li class="separator">|</li>
+            <li>
+                <input id="find-by-caption" type="text" style="height:34px; width: 200px;" placeholder="{{ translate('Search') }}">
+            </li>
+
+            <li style="float: right">
+                <button class="button button-primary" data-button="sortbtn">
+                    <i class="fa fa-fw fa-check"></i>
+                    Ok
+                </button>
+            </li>
+
+            <li id="sortToLi" title="{{ translate('Sort To: ') }}" style="float: right;{% if settings.sort.sortby == 'randomly' %} display:none; {% endif %} }}">
+                {{  translate('Sort To: ') }}
+                <select name="sortto" style="height: 34px;">
+                    <option value="asc" {% if settings.sort.sortto == 'asc' %}selected{% endif %}>Asc</option>
+                    <option value="desc" {% if settings.sort.sortto == 'desc' %}selected{% endif %}>Desc</option>
+                </select>
+            </li>
+
+            <li title="{{ translate('Sort By: ') }}" style="float: right;">
+                {{  translate('Sort By: ') }}
+                <select name="sortby" style="height: 34px;">
+                    <option value="postion" {% if settings.sort.sortby == 'position' %}selected{% endif %}>Position</option>
+                    <option value="adate" {% if settings.sort.sortby == 'adate' %}selected{% endif %}>Add date</option>
+                    <option value="date" {% if settings.sort.sortby == 'date' %}selected{% endif %}>Create date</option>
+                    <option value="size" {% if settings.sort.sortby == 'size' %}selected{% endif %}>Size</option>
+                    <option value="name" {% if settings.sort.sortby == 'name' %}selected{% endif %}>Name</option>
+                    {% if(environment.isPro() == true) %}<option value="tags" {% if settings.sort.sortby == 'tags' %}selected{% endif %}>Tags</option>{% endif %}
+                    <option value="randomly" {% if settings.sort.sortby == 'randomly' %}selected{% endif %}>Randomly</option>
+                </select>
+            </li>
+
+            {#{% if viewType == 'block' %}
+                <li style="float: right;" title="{{ environment.translate('Switch to the list view') }}">
+                    <a href="{{ environment.generateUrl('galleries', 'view', { 'gallery_id': gallery.id, 'view': 'list' }) }}"
+                       class="button">
+                        <i class="fa fa-fw fa-list"></i>
+                    </a>
+                </li>
+            {% endif %}
+
+            {% if viewType == 'list' %}
+                <li style="float:right;" title="{{ environment.translate('Switch to the block view') }}">
+                    <a href="{{ environment.generateUrl('galleries', 'view', { 'gallery_id': gallery.id, 'view': 'block' }) }}"
+                       class="button">
+                        <i class="fa fa-fw fa-th"></i>
+                    </a>
+                </li>
+            {% endif %}#}
+        </ul>
+    </section>
+
+
+    <section class="supsystic-bar" id="images-gallery-toolbar" style="padding-right: 15px;">
+        <ul class="supsystic-bar-controls">
+        {% if(environment.isPro() == true) %}
+            <li>
+                <select name="bulkactions" style="height: 34px;">
+                    {% if(gallery.tags|length > 0) %}
+                        <option value="add">Add Category</option>
+                    {% endif %}
+                    <option value="newcat">Create New Category</option>
+                    {% if(gallery.tags|length > 0) %}
+                        <option value="delcat">Delete Category</option>
+                    {% endif %}
+                </select>
+            </li>
+
+            <li>
+                {% if(gallery.tags|length > 0) %}
+                    <select name="catactions" style="height: 34px;">
+                        {% for value, title in gallery.tags %}
+                            <option value="{{ value }}">{{ title }}</option>
+                        {% endfor %}
+                        <option value="allcat" style="display:none;">All Categories</option>
+                    </select>
+                {% endif %}
+                <input type="text" name="newTag" {% if(gallery.tags|length != 0) %} style="display:none; height:34px; width: 150px;" {% else %} style="width: 150px; height:34px;" {% endif %}value="" placeholder="Category name...">
+            </li>
+
+            <li>
+                <button class="button button-primary" data-button="allimagetags">
+                    <i class="fa fa-fw fa-check"></i>
+                    {{ translate('Apply') }}
+                </button>
+            </li>
+
+        {% endif %}
+        </ul>
+    </section>
+
+
+{% endblock %}
+
+{% block content %}
+    {% import '@galleries/shortcode/import.twig' as importTypes %}
+
+    {% if gallery is not defined or gallery is null %}
+        <p>{{ translate('The gallery is does not exists') }}</p>
+    {% else %}
+        {% if gallery.photos is empty %}
+            <h2 style="text-align: center; color: #bfbfbf; margin: 50px 0 25px 0;">
+                <span style="margin-bottom: 20px; display: block;">
+                    {{ translate('Currently this gallery has no images') }}
+                </span>
+                {{ importTypes.show('1000', gallery.id) }}
+            </h2>
+        {% else %}
+            {% import '@ui/type.twig' as view %}
+            {% set entity = { images: gallery.photos } %}
+            {% set sliderSettings = settings %}
+
+            {% if viewType == 'block' %}
+                {{ view.block_view(entity) }}
+            {% endif %}
+
+            {% if viewType == 'list' %}
+                {{ view.list_view(entity, sliderSettings, gallery.id) }}
+            {% endif %}
+        {% endif %}
+    {% endif %}
+
+    <div id="importDialog" title="{{ translate('Select source to import from') }}" style="display: none;">
+        {{ importTypes.show(400, gallery.id) }}
+    </div>
+
+    <div id="linkedImagesDialog" title="{{ translate('Linked Images') }}" style="display:none;">
+        <div class="linked-images-action-buttons">
+            <button class="button add">{{ translate('Add images') }}</button>
+            <button class="button remove">{{ translate('Remove selected') }}</button>
+        </div>
+        <div class="linked-attachments-list">
+            
+        </div>
+        <div class="loading-container">
+            <i class="fa fa-spinner fa-spin fa-2x"></i>
+        </div>
+    </div>
+
+    <div id="effectDialog" title="{{ translate('Select overlay effect') }}" style="display:none;">
+        <div id="effectsPreview" style="margin-top: 10px;">
+            {% set effects = {
+                'none': 'None',
+                'center': 'Middle',
+                'quarter-appear': 'Appear',
+                'quarter-slide-up': 'Quarter Slide Up',
+                'quarter-slide-side': 'Quarter Slide Side',
+                'quarter-fall-in': 'Quarter Fall in',
+                'quarter-two-step': 'Quarter Two-step',
+                'quarter-zoom': 'Quarter Caption Zoom',
+                'cover-fade': 'Cover Fade',
+                'cover-push-right': 'Cover Push Right',
+                'revolving-door-left': 'Revolving Door Left',
+                'revolving-door-right': 'Revolving Door Right',
+                'revolving-door-top': 'Revolving Door Top',
+                'revolving-door-bottom': 'Revolving Door Bottom',
+                'cover-slide-top': 'Cover Slide Top',
+                'offset': 'Caption Offset',
+                'guillotine-reverse': 'Guillotine Reverse',
+                'half-slide': 'Half Slide',
+                'sqkwoosh': 'Sqkwoosh',
+                'tunnel': 'Tunnel',
+                'direction-aware': 'Direction Aware',
+                'phophorus-rotate': 'Phophorus Rotate',
+                'phophorus-offset': 'Phophorus Offset',
+                'phophorus-scale': 'Phophorus Scale',
+                'cube': 'Cube',
+                'polaroid': 'Polaroid',
+                '3d-cube': '3D Cube'
+            } %}
+            {% set iconsWithCaptionsEffects = {
+                'icons': 'Default',
+                'icons-scale': 'Scale',
+                'icons-sodium-left': 'Sodium Left',
+                'icons-sodium-top': 'Sodium Top',
+                'icons-nitrogen-top': 'Nitrogen Top'
+            } %}
+            {% set figcaptionStyle %}
+                border-radius: {{ settings.thumbnail.border.radius ~ settings.thumbnail.border.radius_unit|replace(['px', '%']) }};
+                {% if environment.isPro() and settings.icons is defined and settings.icons.enabled == 'true' %}
+                    {% if settings.icons.overlay_enabled == 'true' %}
+                        background-color:{{ settings.icons.overlay_color|default('#3498db') }};
+                    {% endif %}
+                {% else %}
+                    color:{{ settings.thumbnail.overlay.foreground }};
+                    background-color:{{ settings.thumbnail.overlay.background }};
+                    font-size:{{ settings.thumbnail.overlay.text_size }}{{ settings.thumbnail.overlay.text_size_unit|replace(['px', '%', 'em']) }};
+                    {% if settings.thumbnail.overlay.text_align != 3 %}
+                        text-align:{{ settings.thumbnail.overlay.text_align|replace(['left', 'right', 'center']) }};
+                    {% endif %}
+                    {% if settings.thumbnail.overlay.effect == 'none' or settings.thumbnail.overlay.enabled == 'false' %}
+                        {#opacity:1;#}
+                        bottom:0;
+                    {% endif %}
+                {% endif %}
+            {% endset %}
+
+            {% if (gallery.settings.icons.enabled == 'false') %}
+                {% for type, name in effects %}
+                    {% if type == 'direction-aware' %}
+                        <figure class="grid-gallery-caption" data-grid-gallery-type="{{ type }}">
+                            <div class="box">
+                                <div class="box__right">Right ? Left</div>
+                                <div class="box__left">Left ? Right</div>
+                                <div class="box__top">Top ? Bottom</div>
+                                <div class="box__bottom">Bottom ? Top</div>
+                                <div class="box__center">
+                                </div>
+                                <img data-src="holder.js/150x150?theme=industrial&text={{ name }}" class="dialog-image">
+                            </div>
+                            <div class="select-element">
+                                {{ translate('Select') }}
+                            </div>
+                        </figure>
+                    {% elseif type == '3d-cube' %}
+                        <figure class="grid-gallery-caption" data-grid-gallery-type="{{ type }}">
+                            <div class="box-3d-cube-scene" style="perspective: 300px;-webkit-perspective: 300px">
+                                <div class="box-3d-cube"
+                                     style="
+                                         transform-origin:50% 50% -75px;
+                                         -ms-transform-origin: 50% 50% -75px;
+                                         -webkit-transform-origin: 50% 50% -75px;
+                                         width:150px; height:150px
+                                     "
+                                >
+                                    <div class="face front" style="width:150px; height:150px">
+                                        <img data-src="holder.js/150x150?theme=industrial&text={{ name }}" class="dialog-image">
+                                    </div>
+                                    <div style="{{ figcaptionStyle|trim }}width:150px; height:150px" class="face back">
+                                        <div class="grid-gallery-figcaption-wrap">
+                                            <span>{{ name }}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="select-element">
+                                {{ translate('Select') }}
+                            </div>
+                        </figure>
+                    {% else %}
+                        <figure class="grid-gallery-caption" data-grid-gallery-type="{{ type }}">
+                            <img data-src="holder.js/150x150?theme=industrial&text={{ name }}" class="dialog-image">
+                            <figcaption style="{{ figcaptionStyle|trim }}">
+                                <div class="grid-gallery-figcaption-wrap">
+                                    <span>{{ name }}</span>
+                                </div>
+                            </figcaption>
+                            <div class="select-element">
+                                {{ translate('Select') }}
+                            </div>
+                        </figure>
+                    {% endif %}
+                {% endfor %}
+                <div class="grid-gallery-clearfix" style="clear: both;"></div>
+            {% else %}
+                <div class="captions-effect-with-icons" data-confirm="{{ translate('This effect requires icons be enabled. Enable Icons?') }}">
+                    <h3>Captions effects with icons</h3>
+                    {% block iconsEffects %}
+                        {% for type, name in iconsWithCaptionsEffects %}
+                            <figure class="grid-gallery-caption" data-type="icons" data-grid-gallery-type="{{ type }}">
+                                <img data-src="holder.js/150x150?theme=industrial&text={{ name }}" class="dialog-image"/>
+                                <figcaption style="{{ figcaptionStyle|trim }}">
+                                    <div class="hi-icon-wrap" style="width: 48px; height: 48px; margin-top: 30%; position:relative;">
+                                        <a href="#" class="hi-icon icon-link" style="border:1px solid #ccc; border-radius:50%;margin:auto;position:absolute;left:0;right:0;top: 0;bottom: 0;">
+                                        </a>
+                                    </div>
+                                </figcaption>
+                                <div class="caption-with-{{ type }}">
+                                    <div style="display: table; height:100%; width:100%;">
+                                        <span style="padding: 10px;display:table-cell;font-size:{{ settings.thumbnail.overlay.text_size }}
+                                        vertical-align:{{ settings.thumbnail.overlay.position }};">
+                                            Caption
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="select-element">
+                                    {{ translate('Select') }}
+                                </div>
+                            </figure>
+                        {% endfor %}
+                    {% endblock %}
+                </div>
+            {% endif %}
+        </div>
+        <style>
+            .hi-icon { 
+                color: {{ settings.icons.color }} !important; 
+                background: {{ settings.icons.background }} !important; 
+            }
+            .hi-icon:hover { 
+                color: {{ settings.icons.hover_color }} !important; 
+                background: {{ settings.icons.background_hover }} !important; 
+            }
+            .hi-icon { 
+                width: {{ settings.icons.size * 2 }}px !important; 
+                height: {{ settings.icons.size * 2 }}px !important; 
+            }
+            .hi-icon:before { 
+                font-size: {{ settings.icons.size|default(16) }}px !important; 
+                line-height: {{ settings.icons.size * 2 }}px !important; 
+            }
+        </style>
+    </div>
+{% endblock %}

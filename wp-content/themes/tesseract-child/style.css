@@ -1,0 +1,74 @@
+/*
+Theme Name: TESSERACT-child
+Version: 1.0
+Description: A child theme of Tesseract
+Template: TESSERACT
+*/
+
+@import url("../TESSERACT/style.css");
+body p {
+    padding: 0;
+}
+
+.site-header .nav-menu {
+    /*text-align: center;*/
+}
+
+.site-header .nav-menu ul li a {
+    font-weight: bold;
+}
+
+.me-portfolio-image {
+    /*border: 4px solid #403e3e;*/
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+.me-resume-subblock {
+    /*border-radius: 40px;*/
+    /*padding: 30px 16px 30px 16px;*/
+}
+
+.me-resume-subblock p {
+    padding: 0;
+}
+
+.resume-download-button {
+    /*vertical-align: middle;*/
+    /*margin-left: 20px;*/
+    padding: 1px 20px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    line-height: 23px;
+}
+
+.me-horizontal-seperator {
+    width: 100px;
+    margin: 20px auto;
+}
+
+.resume-row-content .panel-grid-cell .so-panel {
+    margin-bottom: 0px !important;
+}
+
+.ih-item.square.effect6.from_top_and_bottom {
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+    border: 3px solid rgb(255, 255, 255);
+    width: 700px;
+    height: 432px;
+    margin: auto;
+}
+
+.ih-item.square.effect6.from_top_and_bottom .info p {
+    background-color: rgb(0, 0, 0);
+    /*margin-top: 25%;*/
+}
+
+.ih-item.square.effect6.from_top_and_bottom .info p a{
+    color: #bbbbbb;
+}
+
+footer {
+    display: none;
+}
