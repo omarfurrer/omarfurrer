@@ -55,8 +55,8 @@ body p {
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222);
     border: 3px solid rgb(255, 255, 255);
-    width: 700px;
-    height: 432px;
+    max-width: 700px;
+    max-height: 432px;
     margin: auto;
 }
 
